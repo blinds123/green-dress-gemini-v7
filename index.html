@@ -1252,8 +1252,25 @@ if (document.readyState === 'loading') {
     document.body.style.width = '';
     document.documentElement.style.position = '';
 
+    // Diagnostic logging
+    console.log('[DEBUG] isMobile:', window.innerWidth <= 768, 'width:', window.innerWidth);
+    console.log('[DEBUG] isIOS:', /iPhone|iPad|iPod/.test(navigator.userAgent));
+
     LazyLoader.init();
     initScrollingTestimonials();
+
+    // Visual diagnostic after 2 seconds
+    setTimeout(() => {
+      const lazyDiv = document.getElementById('lazyContent');
+      const hasContent = lazyDiv && lazyDiv.innerHTML.length > 100;
+      console.log('[DEBUG] lazyContent loaded:', hasContent, 'length:', lazyDiv ? lazyDiv.innerHTML.length : 0);
+
+      const indicator = document.createElement('div');
+      indicator.style.cssText = 'position:fixed;top:0;left:0;right:0;background:' + (hasContent ? 'green' : 'red') + ';color:white;padding:10px;z-index:99999;text-align:center;font-size:12px;font-weight:bold';
+      indicator.textContent = hasContent ? '✓ Content Loaded' : '⚠️ Content NOT Loaded';
+      document.body.appendChild(indicator);
+      setTimeout(() => indicator.remove(), 3000);
+    }, 2000);
   });
 } else {
   LazyLoader.init();
