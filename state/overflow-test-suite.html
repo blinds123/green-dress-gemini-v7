@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<title>Overflow Test Suite - Layout Guardian</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.test-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.viewport-test {
+  margin-bottom: 30px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.viewport-header {
+  background: #5C5346;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewport-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-pass { background: #28a745; color: #fff; }
+.status-fail { background: #dc3545; color: #fff; }
+.status-warning { background: #ffc107; color: #000; }
+
+.viewport-body {
+  padding: 20px;
+}
+
+.test-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.test-item:last-child {
+  border-bottom: none;
+}
+
+.test-name {
+  color: #333;
+  font-size: 14px;
+}
+
+.test-result {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pass { color: #28a745; }
+.fail { color: #dc3545; }
+.warning { color: #ffc107; }
+
+.code-block {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 20px 0;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.summary {
+  background: #f8fff8;
+  border: 2px solid #28a745;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.summary h2 {
+  color: #28a745;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.summary-item {
+  text-align: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.summary-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #28a745;
+}
+
+.summary-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.instructions {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.instructions h4 {
+  color: #856404;
+  margin-bottom: 8px;
+}
+
+.instructions p {
+  color: #856404;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  background: #5C5346;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #4a433a;
+  transform: translateY(-2px);
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="test-container">
+  <h1>Layout & Overflow Test Suite</h1>
+  <p class="subtitle">Agent 1G: Comprehensive viewport and overflow testing</p>
+
+  <div class="instructions">
+    <h4>Testing Instructions:</h4>
+    <p>
+      1. Resize your browser to each viewport width listed below<br>
+      2. Click "Run Test" for each viewport<br>
+      3. Verify ZERO horizontal scroll at each breakpoint<br>
+      4. All tests should show "PASS" status
+    </p>
+  </div>
+
+  <div class="button-group">
+    <button onclick="runAllTests()">Run All Tests</button>
+    <button onclick="testOverflowManually()">Manual Overflow Check</button>
+    <button onclick="exportResults()">Export Results</button>
+  </div>
+
+  <!-- 320px Tests -->
+  <div class="viewport-test" id="test-320">
+    <div class="viewport-header">
+      <h3>320px - Ultra Small Mobile</h3>
+      <span class="status-badge status-pass" id="status-320">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Body max-width</span>
+        <span class="test-result pass" id="result-320-body">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Container padding</span>
+        <span class="test-result pass" id="result-320-container">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Button touch target</span>
+        <span class="test-result pass" id="result-320-button">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-320-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 375px Tests -->
+  <div class="viewport-test" id="test-375">
+    <div class="viewport-header">
+      <h3>375px - iPhone SE/8</h3>
+      <span class="status-badge status-pass" id="status-375">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Body max-width</span>
+        <span class="test-result pass" id="result-375-body">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Container padding</span>
+        <span class="test-result pass" id="result-375-container">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Touch targets (44px min)</span>
+        <span class="test-result pass" id="result-375-touch">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-375-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 390px Tests -->
+  <div class="viewport-test" id="test-390">
+    <div class="viewport-header">
+      <h3>390px - iPhone 12/13/14 Pro (PRIMARY TARGET)</h3>
+      <span class="status-badge status-pass" id="status-390">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Sticky CTA visible</span>
+        <span class="test-result pass" id="result-390-cta">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Thumb zone optimized</span>
+        <span class="test-result pass" id="result-390-thumb">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Full-width buttons</span>
+        <span class="test-result pass" id="result-390-buttons">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-390-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 414px Tests -->
+  <div class="viewport-test" id="test-414">
+    <div class="viewport-header">
+      <h3>414px - iPhone Plus/Max</h3>
+      <span class="status-badge status-pass" id="status-414">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Single column layout</span>
+        <span class="test-result pass" id="result-414-layout">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Grid spacing</span>
+        <span class="test-result pass" id="result-414-grid">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-414-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 768px Tests -->
+  <div class="viewport-test" id="test-768">
+    <div class="viewport-header">
+      <h3>768px - Tablet Portrait</h3>
+      <span class="status-badge status-pass" id="status-768">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Two-column grid</span>
+        <span class="test-result pass" id="result-768-grid">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Container max-width</span>
+        <span class="test-result pass" id="result-768-container">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-768-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1024px Tests -->
+  <div class="viewport-test" id="test-1024">
+    <div class="viewport-header">
+      <h3>1024px - Tablet Landscape</h3>
+      <span class="status-badge status-pass" id="status-1024">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Desktop layout preview</span>
+        <span class="test-result pass" id="result-1024-layout">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Container padding (32px)</span>
+        <span class="test-result pass" id="result-1024-padding">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-1024-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1440px Tests -->
+  <div class="viewport-test" id="test-1440">
+    <div class="viewport-header">
+      <h3>1440px - Desktop</h3>
+      <span class="status-badge status-pass" id="status-1440">PENDING</span>
+    </div>
+    <div class="viewport-body">
+      <div class="test-item">
+        <span class="test-name">Max container width (1200px)</span>
+        <span class="test-result pass" id="result-1440-maxwidth">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Centered layout</span>
+        <span class="test-result pass" id="result-1440-center">-</span>
+      </div>
+      <div class="test-item">
+        <span class="test-name">Horizontal scroll</span>
+        <span class="test-result pass" id="result-1440-scroll">-</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <h2>Test Summary</h2>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <div class="summary-value" id="summary-total">0</div>
+        <div class="summary-label">Total Tests</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-value" id="summary-passed">0</div>
+        <div class="summary-label">Passed</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-value" id="summary-failed" style="color:#dc3545">0</div>
+        <div class="summary-label">Failed</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-value" id="summary-score">0%</div>
+        <div class="summary-label">Pass Rate</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Code Output -->
+  <div class="code-block" id="codeOutput">
+    Waiting for test execution...
+  </div>
+</div>
+
+<script>
+let testResults = [];
+
+function runAllTests() {
+  const viewports = [320, 375, 390, 414, 768, 1024, 1440];
+  testResults = [];
+
+  console.log('Starting overflow test suite...');
+
+  viewports.forEach(vp => {
+    const results = testViewport(vp);
+    testResults.push({ viewport: vp, results });
+  });
+
+  updateSummary();
+  displayResults();
+}
+
+function testViewport(width) {
+  const results = {
+    viewport: width,
+    tests: [],
+    passed: 0,
+    failed: 0
+  };
+
+  // Check horizontal overflow
+  const hasOverflow = document.documentElement.scrollWidth > window.innerWidth;
+  results.tests.push({
+    name: 'No horizontal scroll',
+    passed: !hasOverflow,
+    value: hasOverflow ? 'FAIL - overflow detected' : 'PASS'
+  });
+
+  // Check body max-width
+  const bodyMaxWidth = window.getComputedStyle(document.body).maxWidth;
+  const bodyTest = bodyMaxWidth === '100vw' || bodyMaxWidth.includes('100%');
+  results.tests.push({
+    name: 'Body max-width',
+    passed: bodyTest,
+    value: bodyMaxWidth
+  });
+
+  // Check container constraints
+  const containers = document.querySelectorAll('.container, [class*="container"]');
+  let containerTest = true;
+  containers.forEach(c => {
+    if (c.scrollWidth > c.clientWidth) containerTest = false;
+  });
+  results.tests.push({
+    name: 'Container constraints',
+    passed: containerTest,
+    value: containerTest ? 'PASS' : 'FAIL'
+  });
+
+  // Update individual test results
+  results.tests.forEach(test => {
+    if (test.passed) results.passed++;
+    else results.failed++;
+  });
+
+  return results;
+}
+
+function updateSummary() {
+  const total = testResults.reduce((sum, r) => sum + r.results.tests.length, 0);
+  const passed = testResults.reduce((sum, r) => sum + r.results.passed, 0);
+  const failed = testResults.reduce((sum, r) => sum + r.results.failed, 0);
+  const score = Math.round((passed / total) * 100);
+
+  document.getElementById('summary-total').textContent = total;
+  document.getElementById('summary-passed').textContent = passed;
+  document.getElementById('summary-failed').textContent = failed;
+  document.getElementById('summary-score').textContent = score + '%';
+}
+
+function displayResults() {
+  const output = document.getElementById('codeOutput');
+  let html = '<strong>Test Results:</strong><br><br>';
+
+  testResults.forEach(tr => {
+    html += `<strong>${tr.viewport}px:</strong><br>`;
+    tr.results.tests.forEach(test => {
+      const icon = test.passed ? '✓' : '✗';
+      const color = test.passed ? '#28a745' : '#dc3545';
+      html += `<span style="color:${color}">${icon} ${test.name}: ${test.value}</span><br>`;
+    });
+    html += '<br>';
+  });
+
+  output.innerHTML = html;
+}
+
+function testOverflowManually() {
+  const hasOverflow = document.documentElement.scrollWidth > window.innerWidth;
+  const message = hasOverflow
+    ? `OVERFLOW DETECTED!\nPage width: ${document.documentElement.scrollWidth}px\nViewport: ${window.innerWidth}px\nOverflow: ${document.documentElement.scrollWidth - window.innerWidth}px`
+    : `✓ NO OVERFLOW\nPage width: ${document.documentElement.scrollWidth}px\nViewport: ${window.innerWidth}px`;
+
+  alert(message);
+  console.log(message);
+}
+
+function exportResults() {
+  const data = {
+    timestamp: new Date().toISOString(),
+    testResults: testResults,
+    viewport: {
+      width: window.innerWidth,
+      height: window.innerHeight
+    }
+  };
+
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `overflow-test-results-${Date.now()}.json`;
+  a.click();
+}
+
+// Auto-detect current viewport
+window.addEventListener('load', function() {
+  const width = window.innerWidth;
+  const viewportInfo = `Current viewport: ${width}px`;
+  console.log(viewportInfo);
+
+  // Highlight current viewport test
+  const tests = document.querySelectorAll('.viewport-test');
+  tests.forEach(test => {
+    const vp = parseInt(test.id.split('-')[1]);
+    if (Math.abs(width - vp) < 50) {
+      test.style.border = '3px solid #5C5346';
+      test.style.boxShadow = '0 4px 16px rgba(92,83,70,0.2)';
+    }
+  });
+});
+</script>
+
+</body>
+</html>

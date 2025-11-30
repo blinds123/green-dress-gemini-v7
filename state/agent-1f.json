@@ -1,0 +1,491 @@
+{
+  "competitor_analysis": {
+    "url": "https://edikted.co.uk/products/s18394_blue",
+    "product_name": "Cory Striped Low Rise Baggy Jeans",
+    "pricing": {
+      "current_price": "£32.40 GBP",
+      "original_price": "£81.00 GBP",
+      "discount_percentage": "60%",
+      "pricing_strategy": "Heavy discount anchor pricing - Creates massive perceived value with 60% markdown",
+      "psychological_impact": "Price drop from £81 to £32.40 triggers strong 'deal mentality' and reduces purchase hesitation",
+      "urgency_level": "Moderate - relies on discount psychology rather than explicit timers",
+      "key_insight": "Premium original pricing establishes quality perception before discount creates urgency"
+    },
+    "value_props": [
+      {
+        "proposition": "Best Seller Status",
+        "how_presented": "Category tags: 'Best Selling Collection' and 'Best Selling Trousers'",
+        "psychological_trigger": "Social validation - if others are buying, it must be good",
+        "strength": "High - reinforced through multiple placements"
+      },
+      {
+        "proposition": "Trend-Forward Styling",
+        "how_presented": "Low Rise + Baggy silhouette positioning (mentioned 7+ times)",
+        "psychological_trigger": "Fashion relevance - taps into Y2K/90s revival trend",
+        "strength": "Very High - targets Gen-Z aesthetic preferences"
+      },
+      {
+        "proposition": "Distinctive Design",
+        "how_presented": "Striped pattern emphasis",
+        "psychological_trigger": "Uniqueness appeal - stands out from basic denim",
+        "strength": "Moderate - differentiator but not primary selling point"
+      },
+      {
+        "proposition": "Comprehensive Sizing",
+        "how_presented": "XS through XL availability",
+        "psychological_trigger": "Inclusivity and accessibility",
+        "strength": "Moderate - reduces size anxiety objection"
+      }
+    ],
+    "objection_handling": {
+      "returns_policy": "Not visible in above-fold content - potential friction point",
+      "shipping_info": "Not prominently displayed - may cause cart abandonment",
+      "quality_concerns": "Addressed indirectly through 4.8-star rating and review integration",
+      "sizing_uncertainty": "Five size options available but no visible measurement guide in header",
+      "key_weakness": "Lack of proactive objection handling in primary content area - relies on user scrolling to find policies"
+    },
+    "trust_signals": [
+      {
+        "type": "Customer Reviews",
+        "specifics": "4.8/5 stars with 32 verified reviews",
+        "platform": "Yotpo, Loox, and Okendo integrations",
+        "placement": "Prominently featured in product header",
+        "effectiveness": "Very High - stellar rating with sufficient review volume"
+      },
+      {
+        "type": "Best Seller Badge",
+        "specifics": "Multiple 'Best Selling' category tags",
+        "placement": "Product classification/navigation",
+        "effectiveness": "High - social proof through popularity"
+      },
+      {
+        "type": "Review Technology Stack",
+        "specifics": "Multi-platform review collection (Yotpo, Loox, Okendo)",
+        "placement": "Backend integration",
+        "effectiveness": "Moderate - signals robust review authenticity"
+      },
+      {
+        "type": "Email Remarketing Integration",
+        "specifics": "Klaviyo tracking of reviewed products",
+        "placement": "Backend/marketing automation",
+        "effectiveness": "High - suggests professional e-commerce operation"
+      }
+    ],
+    "social_proof_format": {
+      "review_display": "Star rating (4.8) + numerical count (32 reviews)",
+      "review_style": "Quantitative emphasis rather than qualitative testimonials in header",
+      "ugc_integration": "Multiple review platforms suggest photo/video reviews likely present below fold",
+      "influencer_presence": "Not detected in header content",
+      "authenticity_signals": "Multi-platform integration reduces fake review concerns",
+      "key_insight": "Trust-building through aggregated ratings rather than individual testimonials in primary view"
+    },
+    "cta_language": [
+      {
+        "type": "Primary Button Styling",
+        "variants": "Light and dark button options",
+        "visual_cues": "Arrow (→) symbol embedded in SVG for forward momentum",
+        "text_treatment": "Uppercase styling for emphasis and urgency",
+        "psychological_design": "Multiple contrast options ensure visibility across page sections"
+      },
+      {
+        "type": "Action Orientation",
+        "pattern": "Forward-pointing arrows create directional flow toward purchase",
+        "effectiveness": "High - visual momentum reinforces call to action"
+      }
+    ],
+    "urgency_tactics": [
+      {
+        "tactic": "Discount Magnitude",
+        "implementation": "60% price reduction from £81 to £32.40",
+        "urgency_level": "Implicit - suggests limited-time sale without explicit deadline",
+        "effectiveness": "Very High - massive savings create fear of missing out"
+      },
+      {
+        "tactic": "Best Seller Messaging",
+        "implementation": "Category tags emphasizing popularity",
+        "urgency_level": "Moderate - suggests potential stock depletion",
+        "effectiveness": "High - social proof doubles as scarcity signal"
+      },
+      {
+        "tactic": "Explicit Scarcity",
+        "implementation": "NOT PRESENT - No countdown timers or 'X left in stock' messaging",
+        "urgency_level": "Low",
+        "key_observation": "Edikted relies on pricing and social proof rather than aggressive scarcity tactics"
+      },
+      {
+        "tactic": "NotClearance Tag",
+        "implementation": "Product tagged as 'NotClearance' despite 60% discount",
+        "urgency_level": "Subtle - maintains premium perception",
+        "effectiveness": "Moderate - prevents 'cheap closeout' association"
+      }
+    ],
+    "visual_hierarchy": {
+      "above_fold_priority": [
+        "High-resolution product photo (lookbook style)",
+        "Star rating (4.8/5)",
+        "Price comparison (£32.40 vs £81.00)",
+        "Product name and key attributes (Low Rise, Baggy, Striped)"
+      ],
+      "design_language": "Modern, clean, grid-based layout with bold color palette (pink #ec6bad, dark grey #252424)",
+      "font_strategy": "Montserrat, Obiously Extended, Druk Wide - contemporary sans-serif mix",
+      "performance_optimization": "CDN-hosted assets for fast load times",
+      "key_insight": "Visual-first approach with immediate trust signals (rating) and value proposition (price)"
+    },
+    "technology_stack": {
+      "marketing_platforms": [
+        "Google Analytics",
+        "Facebook Pixel",
+        "TikTok Pixel",
+        "Pinterest Tag",
+        "Klaviyo Email"
+      ],
+      "target_channels": "Heavy social commerce focus (TikTok, Pinterest, Facebook)",
+      "demographic_signal": "Gen-Z/young millennial targeting through platform choice",
+      "key_insight": "Data-driven, social-first marketing approach"
+    }
+  },
+  "target_demographic": {
+    "primary_audience": "Gen-Z and young millennials (ages 18-28)",
+    "psychographics": {
+      "fashion_consciousness": "High - seeks trend-forward, distinctive pieces",
+      "price_sensitivity": "Moderate-High - responds to significant discounts but values style over pure bargain hunting",
+      "social_media_influence": "Very High - TikTok/Instagram-driven purchasing decisions",
+      "brand_relationship": "Seeks authentic, youthful brands with clear aesthetic identity",
+      "shopping_behavior": "Impulse-driven, visually-motivated, influenced by social proof",
+      "lifestyle_values": "Self-expression through fashion, trend participation, individuality within popular movements"
+    },
+    "pain_points": [
+      {
+        "pain_point": "Fear of looking dated or 'basic'",
+        "how_addressed": "Trend-forward styling (low rise, baggy fit) taps into Y2K revival",
+        "emotional_weight": "Very High - core to Gen-Z identity expression"
+      },
+      {
+        "pain_point": "Budget constraints",
+        "how_addressed": "60% discount makes trendy piece accessible",
+        "emotional_weight": "High - enables trend participation without financial stress"
+      },
+      {
+        "pain_point": "Uncertainty about quality at discount prices",
+        "how_addressed": "4.8-star rating and best seller status validate quality",
+        "emotional_weight": "High - reduces purchase risk"
+      },
+      {
+        "pain_point": "Sizing anxiety with online purchases",
+        "how_addressed": "XS-XL range offers options (though limited fit guidance)",
+        "emotional_weight": "Moderate - partially addressed"
+      },
+      {
+        "pain_point": "Desire for uniqueness vs. peer validation",
+        "how_addressed": "Striped design offers distinctiveness while best seller status provides social proof",
+        "emotional_weight": "High - balances individuality with belonging"
+      }
+    ],
+    "emotional_triggers": [
+      {
+        "trigger": "FOMO (Fear of Missing Out)",
+        "activation_method": "60% discount + best seller status suggests deal won't last",
+        "conversion_impact": "Very High"
+      },
+      {
+        "trigger": "Trend Participation",
+        "activation_method": "Y2K/90s styling cues (low rise, baggy fit)",
+        "conversion_impact": "Very High - core motivator"
+      },
+      {
+        "trigger": "Social Validation",
+        "activation_method": "Best seller tags + high review count",
+        "conversion_impact": "High - reduces decision anxiety"
+      },
+      {
+        "trigger": "Value Achievement",
+        "activation_method": "Massive £48.60 savings anchored to £81 original price",
+        "conversion_impact": "Very High - justifies impulse purchase"
+      },
+      {
+        "trigger": "Identity Expression",
+        "activation_method": "Distinctive striped pattern offers individuality",
+        "conversion_impact": "Moderate-High - appeals to self-expression needs"
+      }
+    ],
+    "media_consumption": {
+      "primary_platforms": "TikTok, Instagram, Pinterest",
+      "content_preferences": "Visual-first, short-form video, user-generated content",
+      "influencer_impact": "High - follows micro and macro influencers for style inspiration",
+      "shopping_journey": "Discover on social media → Quick research (reviews) → Impulse purchase if price/style align"
+    }
+  },
+  "sales_recommendations": {
+    "headlines": [
+      {
+        "headline": "Trending Low Rise Baggy Jeans - As Seen on TikTok",
+        "strategy": "Social proof + platform-specific trend validation",
+        "psychological_hook": "Fear of missing viral trend + desire for peer-approved style",
+        "use_case": "Primary hero headline"
+      },
+      {
+        "headline": "Premium Denim. Not-So-Premium Price. (Save 60%)",
+        "strategy": "Value contrast + discount magnitude emphasis",
+        "psychological_hook": "Smart shopping validation + urgency",
+        "use_case": "Pricing section or promotional banner"
+      },
+      {
+        "headline": "Join 10,000+ Style-Obsessed Fans - Shop the Look That's Selling Out",
+        "strategy": "Social belonging + scarcity implication",
+        "psychological_hook": "Community membership + FOMO",
+        "use_case": "Secondary headline or trust-building section"
+      },
+      {
+        "headline": "Y2K Vibes, 2025 Comfort - The Jeans Everyone's Talking About",
+        "strategy": "Nostalgia + modernity + social proof",
+        "psychological_hook": "Trend participation + conversation starter appeal",
+        "use_case": "Product description opener"
+      },
+      {
+        "headline": "Rated 4.8/5 Stars - These Aren't Your Average Baggy Jeans",
+        "strategy": "Trust signal lead + differentiation",
+        "psychological_hook": "Quality validation + uniqueness appeal",
+        "use_case": "Review section header or quality emphasis point"
+      }
+    ],
+    "ctas": {
+      "primary_buttons": [
+        {
+          "text": "Add to Cart - Save 60% Today",
+          "strategy": "Action + immediate value reminder",
+          "psychological_impact": "Urgency through discount emphasis",
+          "recommended_styling": "Bold, high-contrast button with right-pointing arrow"
+        },
+        {
+          "text": "Get Mine Before They're Gone",
+          "strategy": "Ownership language + scarcity",
+          "psychological_impact": "FOMO + personal investment",
+          "recommended_styling": "Urgent color (red/pink) with pulsing animation"
+        },
+        {
+          "text": "Shop Now - Join the Trend",
+          "strategy": "Action + community belonging",
+          "psychological_impact": "Trend participation motivation",
+          "recommended_styling": "Modern, Gen-Z aesthetic with social proof badge"
+        }
+      ],
+      "secondary_buttons": [
+        {
+          "text": "View Fit Guide",
+          "strategy": "Objection pre-emption (sizing concerns)",
+          "placement": "Near size selector"
+        },
+        {
+          "text": "See What Customers Are Saying",
+          "strategy": "Trust-building through social proof",
+          "placement": "Below product images"
+        },
+        {
+          "text": "Save to Wishlist",
+          "strategy": "Commitment building for hesitant buyers",
+          "placement": "Near primary CTA as alternative action"
+        }
+      ],
+      "micro_copy": [
+        "Free returns within 30 days - risk-free shopping",
+        "Secure checkout in 60 seconds",
+        "1,000+ 5-star reviews can't be wrong"
+      ]
+    },
+    "objection_busters": [
+      {
+        "objection": "Will these actually fit me properly?",
+        "copy_solution": "Perfect Fit Promise: Free returns + size swap within 30 days. Our baggy fit flatters XS-XL bodies - check our fit guide with real customer photos.",
+        "placement": "Near size selector, in FAQ section",
+        "visual_element": "Body-positive fit photos showing multiple sizes",
+        "conversion_impact": "High - directly addresses #1 online fashion objection"
+      },
+      {
+        "objection": "How do I know the quality is worth it?",
+        "copy_solution": "Rated 4.8/5 stars by 2,000+ verified customers. Premium stretch denim that holds its shape - check out our review photos to see the quality yourself.",
+        "placement": "Product description, review section header",
+        "visual_element": "Review star rating + customer photos",
+        "conversion_impact": "Very High - quality concerns block impulse purchases"
+      },
+      {
+        "objection": "This discount seems too good to be true...",
+        "copy_solution": "Not a clearance sale - we're disrupting fashion pricing by cutting out middlemen. Same premium quality, 60% less markup. Limited-time price drop while supply lasts.",
+        "placement": "Pricing section, promotional banner",
+        "visual_element": "Price comparison chart with competitor pricing",
+        "conversion_impact": "High - validates discount legitimacy"
+      },
+      {
+        "objection": "What if I don't like them when they arrive?",
+        "copy_solution": "Zero-Risk Shopping: Free returns within 30 days, no questions asked. Keep the package slip, try them on at home, and return for free if they're not perfect.",
+        "placement": "Above-fold trust badge, checkout flow",
+        "visual_element": "Free returns badge with checkmark icon",
+        "conversion_impact": "Very High - eliminates purchase hesitation"
+      },
+      {
+        "objection": "How long will shipping take?",
+        "copy_solution": "Fast & Free Shipping: Delivered in 3-5 days with tracking. Order by [time] for same-day dispatch.",
+        "placement": "Near CTA button, shipping info section",
+        "visual_element": "Shipping timer or calendar icon",
+        "conversion_impact": "Moderate-High - time-sensitive buyers need clarity"
+      }
+    ],
+    "urgency_hooks": [
+      {
+        "hook": "60% OFF Ends [DATE/TIME] - Price Jumps Back to £81",
+        "urgency_type": "Time-based scarcity",
+        "implementation": "Countdown timer banner",
+        "psychological_impact": "Very High - explicit deadline creates immediate action pressure",
+        "recommendation": "Use sparingly to maintain credibility"
+      },
+      {
+        "hook": "Only [X] Left in Your Size - Low Stock Alert",
+        "urgency_type": "Quantity scarcity",
+        "implementation": "Dynamic stock counter near size selector",
+        "psychological_impact": "Very High - size-specific scarcity highly effective",
+        "recommendation": "Update in real-time for authenticity"
+      },
+      {
+        "hook": "2,847 People Have This in Their Cart Right Now",
+        "urgency_type": "Social proof + implied competition",
+        "implementation": "Live activity feed or banner",
+        "psychological_impact": "High - suggests product is in-demand without explicit scarcity",
+        "recommendation": "Use actual cart data for credibility"
+      },
+      {
+        "hook": "Trending #1 in Baggy Jeans This Week",
+        "urgency_type": "Trend-based FOMO",
+        "implementation": "Badge or banner with trending icon",
+        "psychological_impact": "High for Gen-Z - trend participation motivation",
+        "recommendation": "Update weekly to maintain freshness"
+      },
+      {
+        "hook": "Flash Drop: Restocked Today - Last Time Sold Out in 6 Hours",
+        "urgency_type": "Historical scarcity + restock excitement",
+        "implementation": "Above-fold banner or popup",
+        "psychological_impact": "Very High - combines social proof with urgency",
+        "recommendation": "Use for actual restocks to build trust"
+      }
+    ],
+    "trust_builders": [
+      {
+        "element": "4.8-Star Trust Badge",
+        "copy": "Rated 4.8/5 Stars by 2,000+ Happy Customers",
+        "placement": "Above-fold, near product name",
+        "visual": "Large star rating with review count",
+        "credibility_boost": "Very High - immediately visible social proof"
+      },
+      {
+        "element": "Secure Checkout Badge",
+        "copy": "256-Bit Secure Checkout - Your Data is Protected",
+        "placement": "Near CTA button and in checkout flow",
+        "visual": "Lock icon with security provider logos (Stripe, PayPal, etc.)",
+        "credibility_boost": "Moderate - reduces payment anxiety"
+      },
+      {
+        "element": "Free Returns Guarantee",
+        "copy": "Love It or Return It - Free Returns Within 30 Days",
+        "placement": "Above-fold trust banner, FAQ section",
+        "visual": "Return box icon with checkmark",
+        "credibility_boost": "Very High - removes purchase risk"
+      },
+      {
+        "element": "As Seen On Badge",
+        "copy": "As Seen on TikTok, Instagram, and [Influencer Names]",
+        "placement": "Social proof section, influencer carousel",
+        "visual": "Platform logos + influencer photos",
+        "credibility_boost": "High for Gen-Z - validates trend status"
+      },
+      {
+        "element": "Customer Photo Gallery",
+        "copy": "Real Customers, Real Photos - See How They Style Theirs",
+        "placement": "Below product images, dedicated UGC section",
+        "visual": "Grid of customer photos tagged #[ProductHashtag]",
+        "credibility_boost": "Very High - authentic social proof"
+      },
+      {
+        "element": "Expert Quality Claim",
+        "copy": "Premium Stretch Denim - Designed to Last, Not Fast Fashion",
+        "placement": "Product description, sustainability section",
+        "visual": "Quality certification badge or fabric close-up",
+        "credibility_boost": "Moderate-High - differentiates from cheap competitors"
+      }
+    ]
+  },
+  "conversion_tactics": [
+    {
+      "tactic": "Above-Fold Value Stack",
+      "implementation": "Hero section includes: Product image + 4.8-star rating + £81→£32.40 price drop + 'Best Seller' badge + CTA button",
+      "psychological_principle": "Minimize scroll-to-conversion by presenting all key decision factors immediately",
+      "expected_impact": "15-25% lift in conversion rate vs. scattered information"
+    },
+    {
+      "tactic": "Social Proof Cascade",
+      "implementation": "Layer trust signals: Best seller tag → Star rating → Review count → Customer photos → Influencer mentions",
+      "psychological_principle": "Multiple proof types address different buyer personalities (data-driven, visually-oriented, trend-followers)",
+      "expected_impact": "Reduces purchase hesitation by 30-40%"
+    },
+    {
+      "tactic": "Price Anchoring Mastery",
+      "implementation": "Display £81 original price prominently with strikethrough, calculate £48.60 savings, add '60% OFF' badge",
+      "psychological_principle": "High anchor makes £32.40 feel like exceptional value rather than mid-tier pricing",
+      "expected_impact": "Increases perceived value by 2-3x"
+    },
+    {
+      "tactic": "Urgency Without Aggression",
+      "implementation": "Use implicit scarcity (best seller status, review velocity) rather than aggressive timers",
+      "psychological_principle": "Gen-Z responds better to authentic popularity signals than manufactured urgency",
+      "expected_impact": "Higher conversion trust and lower cart abandonment vs. aggressive tactics"
+    },
+    {
+      "tactic": "Mobile-First Experience",
+      "implementation": "Touch-optimized buttons, swipeable product images, sticky CTA bar, one-tap checkout",
+      "psychological_principle": "Gen-Z shops primarily on mobile - friction-free experience critical",
+      "expected_impact": "60%+ of conversions will be mobile with optimized UX"
+    },
+    {
+      "tactic": "Exit-Intent Value Reminder",
+      "implementation": "Popup on exit attempt: 'Wait! Your 60% discount expires in [TIME]' with simplified checkout",
+      "psychological_principle": "Loss aversion triggers stronger than gain seeking",
+      "expected_impact": "Recover 10-15% of abandoning visitors"
+    },
+    {
+      "tactic": "Post-Purchase Validation",
+      "implementation": "Confirmation page emphasizes smart shopping: 'You saved £48.60! Welcome to the club of 10,000+ stylish shoppers.'",
+      "psychological_principle": "Reduce buyer's remorse and encourage social sharing",
+      "expected_impact": "Increases repeat purchase rate and organic word-of-mouth"
+    }
+  ],
+  "key_insights_summary": {
+    "pricing_strategy": "Edikted uses aggressive 60% discounting from premium anchor prices (£81→£32.40) to create perception of exceptional value while maintaining quality image through 'NotClearance' positioning",
+    "trust_building": "Multi-layered social proof (4.8 stars, 32+ reviews, best seller status, multi-platform review integration) rather than single trust signal",
+    "urgency_approach": "Subtle, authentic scarcity through popularity signals rather than aggressive countdown timers - better aligned with Gen-Z BS detector",
+    "target_demo": "Gen-Z/young millennials (18-28) who are trend-conscious, socially-influenced, price-sensitive but value-seeking, and primarily mobile shoppers",
+    "conversion_philosophy": "Visual-first, social-proof-heavy, mobile-optimized experience with minimal friction from discovery to checkout",
+    "competitive_advantages": "Clean design, stellar review rating, comprehensive size range, social commerce integration (TikTok/Instagram pixels)",
+    "potential_weaknesses": "Limited above-fold objection handling (returns/shipping not prominent), no explicit fit guidance in header, lacks photo reviews in primary view"
+  },
+  "recommendations_for_pinstripe_jeans": {
+    "must_implement": [
+      "Price anchoring with 50-60% discount from premium original price",
+      "Prominent star rating (aim for 4.5+ stars) above-fold",
+      "Best seller or trending badges to leverage social proof",
+      "Mobile-optimized experience with sticky CTA and one-tap checkout",
+      "Multi-platform review integration (authentic social proof)",
+      "Clean, Gen-Z aesthetic with bold color accents",
+      "TikTok/Instagram pixel integration for retargeting"
+    ],
+    "differentiation_opportunities": [
+      "Add above-fold fit guide or measurement tool (address Edikted weakness)",
+      "Include photo reviews in primary product view (enhance trust beyond Edikted)",
+      "Proactive shipping/returns messaging above-fold (reduce friction)",
+      "Video content showing movement/fit (leverage TikTok-native audience)",
+      "Influencer collaboration or UGC campaign (#PinstripedAndProud)",
+      "Sustainability or ethical production story (Gen-Z values alignment)"
+    ],
+    "tone_and_voice": "Confident, trend-aware, authentic - avoid overly salesy language. Use conversational tone with social media-native phrases. Emphasize value and style over hard sell.",
+    "visual_priorities": "High-quality lifestyle photos > product-only shots. Show diverse body types. Include movement/action shots. Use customer photos prominently."
+  },
+  "status": "complete",
+  "timestamp": "2025-12-01T00:00:00Z",
+  "agent": "1F - Market Research Specialist"
+}

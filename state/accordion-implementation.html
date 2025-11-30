@@ -1,0 +1,243 @@
+<!-- ACCORDION IMPLEMENTATION EXAMPLE -->
+<!-- This shows how to convert the current product details section to accordion format -->
+
+<!-- BEFORE (Current Implementation) -->
+<div class="fade-in" style="padding:60px 20px;background:#f8f9fa;max-width:1200px;margin:0 auto">
+  <h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:40px">The Details</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px">
+    <div style="background:#fff;padding:30px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.04)">
+      <h3 style="font-size:18px;font-weight:600;margin-bottom:16px">Fit & Style</h3>
+      <ul style="color:#555;font-size:15px;line-height:1.8;list-style:none;padding:0">
+        <li>Wide-leg, pleated silhouette</li>
+        <li>Hook-and-bar closure with front zip</li>
+        <li>Built-in tie belt at waist</li>
+        <li>High-rise, tailored fit</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- AFTER (Accordion Format) -->
+<div class="fade-in compact-section" style="padding:60px 20px;background:#f8f9fa;max-width:1200px;margin:0 auto">
+  <h2 style="text-align:center;font-size:28px;font-weight:700;margin-bottom:40px">Product Details</h2>
+
+  <!-- Description Accordion -->
+  <div class="accordion-section">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Description</span>
+    </div>
+    <div class="accordion-content">
+      <p class="accordion-preview">
+        The viral wide-leg pants everyone's obsessed with. Crafted from premium thick woven fabric in a sophisticated olive colorway, these pleated pants feature a tailored high-rise fit that flatters every body type.
+      </p>
+      <p style="color:#666;font-size:15px;line-height:1.6;margin-top:12px">
+        The built-in tie belt cinches at the waist for a customized fit, while the hook-and-bar closure with front zip ensures a secure, polished look. The wide-leg silhouette drapes beautifully and creates an elongated, expensive aesthetic that pairs perfectly with everything from casual crop tops to tailored blazers.
+      </p>
+    </div>
+  </div>
+
+  <!-- Size Guide Accordion -->
+  <div class="accordion-section">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Size Guide</span>
+    </div>
+    <div class="accordion-content">
+      <table style="width:100%;border-collapse:collapse;text-align:left">
+        <thead>
+          <tr style="border-bottom:2px solid #e0e0e0">
+            <th style="padding:12px;font-weight:600">Size</th>
+            <th style="padding:12px;font-weight:600">Waist (inches)</th>
+            <th style="padding:12px;font-weight:600">Hip (inches)</th>
+            <th style="padding:12px;font-weight:600">Inseam (inches)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #f0f0f0">
+            <td style="padding:12px">XXS</td>
+            <td style="padding:12px">23-24</td>
+            <td style="padding:12px">33-34</td>
+            <td style="padding:12px">30</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0f0f0">
+            <td style="padding:12px">XS</td>
+            <td style="padding:12px">25-26</td>
+            <td style="padding:12px">35-36</td>
+            <td style="padding:12px">30</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0f0f0">
+            <td style="padding:12px">S</td>
+            <td style="padding:12px">27-28</td>
+            <td style="padding:12px">37-38</td>
+            <td style="padding:12px">31</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0f0f0">
+            <td style="padding:12px">M</td>
+            <td style="padding:12px">29-30</td>
+            <td style="padding:12px">39-40</td>
+            <td style="padding:12px">31</td>
+          </tr>
+          <tr style="border-bottom:1px solid #f0f0f0">
+            <td style="padding:12px">L</td>
+            <td style="padding:12px">31-32</td>
+            <td style="padding:12px">41-42</td>
+            <td style="padding:12px">32</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="color:#666;font-size:14px;margin-top:16px;padding:12px;background:#f8f9fa;border-radius:6px">
+        <strong>Fit Tip:</strong> These pants run slightly large. If between sizes, we recommend sizing down. The tie belt allows for waist adjustment.
+      </p>
+    </div>
+  </div>
+
+  <!-- Shipping Info Accordion -->
+  <div class="accordion-section">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Shipping Info</span>
+    </div>
+    <div class="accordion-content">
+      <ul style="list-style:none;padding:0;color:#666;font-size:15px;line-height:2">
+        <li style="display:flex;gap:12px;margin-bottom:12px">
+          <span style="color:#28a745;font-weight:600;min-width:120px">Standard:</span>
+          <span>Ships same-day for in-stock items (3-5 business days)</span>
+        </li>
+        <li style="display:flex;gap:12px;margin-bottom:12px">
+          <span style="color:#28a745;font-weight:600;min-width:120px">Pre-Order:</span>
+          <span>Ships in 2-3 weeks (68% discount applied)</span>
+        </li>
+        <li style="display:flex;gap:12px;margin-bottom:12px">
+          <span style="color:#28a745;font-weight:600;min-width:120px">International:</span>
+          <span>Worldwide shipping available (7-14 business days)</span>
+        </li>
+      </ul>
+      <div style="background:#f8fff8;border:1px solid #28a745;border-radius:8px;padding:16px;margin-top:16px">
+        <strong style="color:#28a745">Free shipping on all orders over $50</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Returns Policy Accordion -->
+  <div class="accordion-section">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Returns & Exchanges</span>
+    </div>
+    <div class="accordion-content">
+      <h4 style="font-weight:600;margin-bottom:12px;font-size:16px">30-Day Money-Back Guarantee</h4>
+      <p style="color:#666;font-size:15px;line-height:1.6;margin-bottom:16px">
+        Not in love with your pants? No worries. Return them within 30 days for a full refund - no questions asked.
+      </p>
+      <ul style="list-style:disc;padding-left:20px;color:#666;font-size:15px;line-height:1.8">
+        <li>Free return shipping (prepaid label provided)</li>
+        <li>Full refund processed within 5 business days</li>
+        <li>Items must be unworn with tags attached</li>
+        <li>Exchanges available for different sizes</li>
+      </ul>
+      <div style="background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:16px;margin-top:16px">
+        <strong style="color:#856404">Note:</strong> Pre-order items are final sale (non-refundable due to 68% discount)
+      </div>
+    </div>
+  </div>
+
+  <!-- Care Instructions Accordion -->
+  <div class="accordion-section">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <span>Care Instructions</span>
+    </div>
+    <div class="accordion-content">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+        <div>
+          <h4 style="font-weight:600;margin-bottom:8px;font-size:15px;color:#5C5346">Washing</h4>
+          <ul style="list-style:none;padding:0;color:#666;font-size:14px;line-height:1.8">
+            <li>Machine wash cold</li>
+            <li>Gentle cycle recommended</li>
+            <li>Turn inside out before washing</li>
+            <li>Wash with similar colors</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-weight:600;margin-bottom:8px;font-size:15px;color:#5C5346">Drying</h4>
+          <ul style="list-style:none;padding:0;color:#666;font-size:14px;line-height:1.8">
+            <li>Hang dry recommended</li>
+            <li>Low tumble dry if needed</li>
+            <li>Remove promptly to avoid wrinkles</li>
+            <li>Do not overdry</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-weight:600;margin-bottom:8px;font-size:15px;color:#5C5346">Ironing</h4>
+          <ul style="list-style:none;padding:0;color:#666;font-size:14px;line-height:1.8">
+            <li>Low heat if necessary</li>
+            <li>Iron inside out</li>
+            <li>Steam to remove wrinkles</li>
+            <li>Avoid direct heat on pleats</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACCORDION JAVASCRIPT -->
+<script>
+function toggleAccordion(headerElement) {
+  const content = headerElement.nextElementSibling;
+  const isActive = headerElement.classList.contains('active');
+
+  // Close all other accordions (optional - remove for multi-open)
+  document.querySelectorAll('.accordion-header.active').forEach(header => {
+    if (header !== headerElement) {
+      header.classList.remove('active');
+      header.nextElementSibling.classList.remove('active');
+    }
+  });
+
+  // Toggle current accordion
+  if (isActive) {
+    headerElement.classList.remove('active');
+    content.classList.remove('active');
+  } else {
+    headerElement.classList.add('active');
+    content.classList.add('active');
+  }
+}
+
+// Optional: Open first accordion by default
+document.addEventListener('DOMContentLoaded', function() {
+  const firstAccordion = document.querySelector('.accordion-header');
+  if (firstAccordion) {
+    // Uncomment to auto-open first section:
+    // toggleAccordion(firstAccordion);
+  }
+});
+</script>
+
+<!-- MOBILE STICKY CTA BAR -->
+<!-- Add this at the end of body, before closing </body> tag -->
+<div class="mobile-sticky-cta" style="display:none">
+  <button class="cta-btn cta-primary" onclick="handleAddToCart('primary')" style="margin:0">
+    GET MINE - $59
+  </button>
+  <button class="cta-btn" onclick="handleAddToCart('secondary')" style="margin:0;background:#fff;color:#5C5346;border:2px solid #5C5346">
+    PRE-ORDER - $19
+  </button>
+</div>
+
+<script>
+// Show sticky CTA on mobile when scrolling past hero
+window.addEventListener('scroll', function() {
+  if (window.innerWidth <= 768) {
+    const stickyCTA = document.querySelector('.mobile-sticky-cta');
+    const heroSection = document.querySelector('.product-hero');
+
+    if (heroSection && stickyCTA) {
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+
+      if (heroBottom < 0) {
+        stickyCTA.style.display = 'flex';
+      } else {
+        stickyCTA.style.display = 'none';
+      }
+    }
+  }
+});
+</script>

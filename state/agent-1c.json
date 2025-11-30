@@ -1,0 +1,14 @@
+{
+  "pool_url": "https://simpleswap-automation-1.onrender.com",
+  "pool_19": 15,
+  "pool_29": 15,
+  "pool_59": 15,
+  "total": 45,
+  "total_max_size": 45,
+  "mode": "dynamic-pool",
+  "persistence": "render_disk_enabled",
+  "health_status": "healthy",
+  "timestamp": "2025-11-30T22:37:42.981Z",
+  "status": "complete",
+  "notes": "All pools well above minimum requirement of 5 exchanges per tier. Total of 45 exchanges available across all tiers."
+}

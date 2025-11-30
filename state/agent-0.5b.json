@@ -1,0 +1,37 @@
+{
+  "source_url": "https://edikted.co.uk/products/s18394_blue?srsltid=AfmBOoqOi8PopJ6rPxDZIH2m68zBUX621opiSbJ5E3wcTCf78Fk-460I",
+  "product_name": "Cory Striped Low Rise Baggy Jeans",
+  "images_found": 5,
+  "images_downloaded": 5,
+  "image_files": [
+    "product-01.jpg",
+    "product-02.jpg",
+    "product-03.jpg",
+    "product-04.jpg",
+    "product-05.jpg"
+  ],
+  "resolution": "1200x1799 pixels (all images)",
+  "file_sizes": {
+    "product-01.jpg": "199579 bytes (195 KB)",
+    "product-02.jpg": "300402 bytes (293 KB)",
+    "product-03.jpg": "200005 bytes (195 KB)",
+    "product-04.jpg": "337786 bytes (330 KB)",
+    "product-05.jpg": "330432 bytes (323 KB)"
+  },
+  "image_descriptions": {
+    "product-01.jpg": "Full body front view - model wearing striped jeans with grey crop top and cap",
+    "product-02.jpg": "Close-up front view - jeans only, showing double button detail and striped pattern",
+    "product-03.jpg": "Full body front view - model with hand in pocket, showing fit",
+    "product-04.jpg": "Side angle view - showing baggy fit and stripe details",
+    "product-05.jpg": "Back view - showing rear pockets and stripe pattern"
+  },
+  "product_details": {
+    "color": "Blue with vertical white stripes",
+    "style": "Low rise baggy jeans",
+    "fabric": "Rigid denim, 100% Cotton",
+    "features": "Double button detailing, striped pattern"
+  },
+  "duplicates_removed": 0,
+  "errors": [],
+  "status": "complete"
+}
