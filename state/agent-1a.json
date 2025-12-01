@@ -2,80 +2,38 @@
   "product_count": 6,
   "testimonial_count": 6,
   "product_images": [
-    {
-      "file": "product-01.jpeg",
-      "width": 536,
-      "height": 800,
-      "size_bytes": 50653
-    },
-    {
-      "file": "product-02.jpeg",
-      "width": 536,
-      "height": 800,
-      "size_bytes": 50729
-    },
-    {
-      "file": "product-03.jpeg",
-      "width": 536,
-      "height": 800,
-      "size_bytes": 50651
-    },
-    {
-      "file": "product-04.jpeg",
-      "width": 536,
-      "height": 800,
-      "size_bytes": 50880
-    },
-    {
-      "file": "product-05.jpeg",
-      "width": 536,
-      "height": 800,
-      "size_bytes": 50926
-    },
-    {
-      "file": "product-06.jpeg",
-      "width": 536,
-      "height": 800,
-      "size_bytes": 50790
-    }
+    "product-01.jpeg",
+    "product-02.jpeg",
+    "product-03.jpeg",
+    "product-04.jpeg",
+    "product-05.jpeg",
+    "product-06.jpeg"
   ],
   "testimonial_images": [
-    {
-      "file": "testimonial-01.jpeg",
-      "width": 268,
-      "height": 400,
-      "size_bytes": 51217
-    },
-    {
-      "file": "testimonial-02.jpeg",
-      "width": 268,
-      "height": 400,
-      "size_bytes": 50260
-    },
-    {
-      "file": "testimonial-03.jpeg",
-      "width": 268,
-      "height": 400,
-      "size_bytes": 52112
-    },
-    {
-      "file": "testimonial-04.jpeg",
-      "width": 268,
-      "height": 400,
-      "size_bytes": 50695
-    },
-    {
-      "file": "testimonial-05.jpeg",
-      "width": 268,
-      "height": 400,
-      "size_bytes": 49778
-    },
-    {
-      "file": "testimonial-06.jpeg",
-      "width": 268,
-      "height": 400,
-      "size_bytes": 51583
-    }
+    "testimonial-01.jpeg",
+    "testimonial-02.jpeg",
+    "testimonial-03.jpeg",
+    "testimonial-04.jpeg",
+    "testimonial-05.jpeg",
+    "testimonial-06.jpeg"
   ],
-  "status": "complete"
+  "image_details": {
+    "product": {
+      "dimensions": "536x800",
+      "format": "JPEG",
+      "avg_size_kb": 50.5,
+      "max_size_kb": 50.9,
+      "min_size_kb": 49.4
+    },
+    "testimonials": {
+      "dimensions": "268x400",
+      "format": "JPEG",
+      "avg_size_kb": 50.9,
+      "max_size_kb": 52.1,
+      "min_size_kb": 48.6
+    }
+  },
+  "compressed": [],
+  "status": "complete",
+  "notes": "All images are already optimized and under size limits. Product images average 50.5KB (well under 500KB limit), testimonial images average 50.9KB (well under 200KB limit). All images are in JPEG format with consistent dimensions per category."
 }

@@ -4,16 +4,21 @@
   "pool_29": 15,
   "pool_59": 15,
   "total": 45,
+  "health": "ok",
   "status": "complete",
-  "meta": {
-    "service": "SimpleSwap Dynamic Pool Server [PRODUCTION]",
-    "version": "5.0.0-BULLETPROOF",
-    "mode": "dynamic-pool",
-    "features": [
-      "Instant replenishment on consumption",
-      "3 retries with exponential backoff",
-      "60s health check catches failures",
-      "5min self-ping prevents sleep"
-    ]
-  }
+  "timestamp": "2025-12-01T19:45:09.658Z",
+  "service_version": "5.0.0-BULLETPROOF",
+  "mode": "dynamic-pool",
+  "stats": {
+    "totalConsumed": 18,
+    "totalReplenished": 19,
+    "failedReplenishments": 0,
+    "lastHealthCheck": "2025-12-01T19:44:37.631Z"
+  },
+  "features": [
+    "Instant replenishment on consumption",
+    "3 retries with exponential backoff",
+    "60s health check catches failures",
+    "5min self-ping prevents sleep"
+  ]
 }

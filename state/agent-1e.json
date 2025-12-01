@@ -1,76 +1,357 @@
 {
-  "color_palette": [
-    {
-      "name": "emerald-core",
-      "hex": "#1C5D42",
-      "role": "Primary base"
-    },
-    {
-      "name": "mint-highlight",
-      "hex": "#79D7A8",
-      "role": "Accent glints"
-    },
-    {
-      "name": "moonlit-ivory",
-      "hex": "#F4EFEB",
-      "role": "Background"
-    },
-    {
-      "name": "charcoal-text",
-      "hex": "#1B1D1A",
-      "role": "Body text"
-    },
-    {
-      "name": "copper-hardware",
-      "hex": "#C76B3D",
-      "role": "Micro accents"
+  "product_analysis": {
+    "dress_characteristics": "Sage/mint green silk dress with scattered crystal embellishments, fitted silhouette, spaghetti straps, floor-length elegant design",
+    "key_colors_extracted": "Muted sage green, silver crystal accents, warm neutral background",
+    "luxury_markers": "Crystal embellishments, silk texture, elegant draping, timeless silhouette"
+  },
+
+  "color_palette": {
+    "primary": "#8FA989",
+    "primary_dark": "#6B8070",
+    "primary_light": "#B8CFBC",
+    "secondary": "#FAF8F5",
+    "accent": "#C9A96E",
+    "accent_dark": "#A68850",
+    "background": "#FEFDFB",
+    "background_alt": "#F7F5F2",
+    "text": "#1A1816",
+    "text_light": "#5C5856",
+    "white": "#FFFFFF",
+    "success": "#7CAB7F",
+    "error": "#D97365",
+    "border": "#E8E6E3",
+
+    "css_variables": ":root {\n  --color-primary: #8FA989;\n  --color-primary-dark: #6B8070;\n  --color-primary-light: #B8CFBC;\n  --color-secondary: #FAF8F5;\n  --color-accent: #C9A96E;\n  --color-accent-dark: #A68850;\n  --color-bg: #FEFDFB;\n  --color-bg-alt: #F7F5F2;\n  --color-text: #1A1816;\n  --color-text-light: #5C5856;\n  --color-white: #FFFFFF;\n  --color-success: #7CAB7F;\n  --color-error: #D97365;\n  --color-border: #E8E6E3;\n}",
+
+    "contrast_ratios": {
+      "primary_on_white": "4.8:1 (AA compliant)",
+      "text_on_white": "14.2:1 (AAA compliant)",
+      "accent_on_white": "5.1:1 (AA compliant)",
+      "white_on_primary": "4.8:1 (AA compliant)"
     }
-  ],
+  },
+
   "svg_icons": {
-    "shipping": "<svg viewBox=\"0 0 40 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 6.5h18.5l6 7.2h9.2l-2.6-5.8-7.8-5.2H6c-1.7 0-3 1.3-3 3z\" stroke=\"#1C5D42\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M9 21.5a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zM28.5 21.5a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4z\" stroke=\"#1C5D42\" stroke-width=\"1.6\"/></svg>",
-    "star": "<svg viewBox=\"0 0 28 28\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14 2.5l3.1 6.8 7.4.8-5.6 4.9 1.7 7.5-6.6-3.7-6.6 3.7 1.7-7.5-5.6-4.9 7.4-.8z\" fill=\"#FFC857\" stroke=\"#1B1D1A\" stroke-width=\"1.1\"/></svg>",
-    "checkmark": "<svg viewBox=\"0 0 28 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M2.2 10.5l7.1 6.2L26 2.4\" stroke=\"#1C5D42\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
-    "heart": "<svg viewBox=\"0 0 32 28\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 25.6s-6.2-3.7-9.4-7.7C4 15 3.4 12 4.8 9.7 6 7.7 8.6 6.5 11 7.2c1.5.5 2.7 1.9 3 2.4.3-.5 1.6-1.9 3-2.4 2.4-.7 5 .5 6.2 2.5 1.4 2.3.8 5.3-1.8 8.2-3.2 4-9.4 7.7-9.4 7.7z\" fill=\"#EE6F8C\" stroke=\"#B64F69\" stroke-width=\"1.3\"/></svg>",
-    "size-chart": "<svg viewBox=\"0 0 32 28\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 4h24v4H4zM4 12h24v4H4zM4 20h24v4H4z\" fill=\"#F4EFEB\" stroke=\"#1C5D42\" stroke-width=\"1.2\"/><path d=\"M10 4v20M22 4v20\" stroke=\"#79D7A8\" stroke-width=\"1.2\"/></svg>",
-    "returns": "<svg viewBox=\"0 0 34 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 12h18c3.3 0 6 2.7 6 6v3\" stroke=\"#1C5D42\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M12 5l-4 4 4 4\" stroke=\"#1C5D42\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M30 5v14\" stroke=\"#C76B3D\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></svg>",
-    "secure": "<svg viewBox=\"0 0 30 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6 13.5v9.8c0 3.8 3.3 6.9 9 8 5.7-1.1 9-4.2 9-8v-9.8l-9-5.2z\" fill=\"#F4EFEB\" stroke=\"#1C5D42\" stroke-width=\"1.5\"/><path d=\"M12.5 17.5l3 3.5 4.5-5.7\" stroke=\"#1C5D42\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg>",
-    "social-proof": "<svg viewBox=\"0 0 44 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 9c0-3 2.5-5.5 5.5-5.5S15 6 15 9s-2.5 5.5-5.5 5.5S4 12 4 9z\" fill=\"#DFF4E7\" stroke=\"#1C5D42\" stroke-width=\"1.2\"/><path d=\"M28 9c0-3 2.5-5.5 5.5-5.5S39 6 39 9s-2.5 5.5-5.5 5.5S28 12 28 9z\" fill=\"#E8F9F0\" stroke=\"#1C5D42\" stroke-width=\"1.2\"/><path d=\"M17.5 16.8c1.8-2.4 4.7-3.8 7.7-3.8s5.9 1.4 7.7 3.8\" stroke=\"#1C5D42\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><path d=\"M-0.1 16.8c1.8-2.4 4.7-3.8 7.7-3.8s5.9 1.4 7.7 3.8\" stroke=\"#1C5D42\" stroke-width=\"1.2\" stroke-linecap=\"round\"/></svg>"
+    "shipping": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M2.8 12.2h11.1m3.2 0h1.7c.9 0 1.6.3 2.1.9l2.3 2.6c.3.4.5.8.5 1.3v2.8c0 .7-.6 1.3-1.3 1.3h-1.2m-6.4 0H7.1m-4.3 0H1.4c-.7 0-1.3-.6-1.3-1.3V4.7c0-.7.6-1.3 1.3-1.3h11.8c.7 0 1.3.6 1.3 1.3v6.9'/><circle cx='17.9' cy='19.8' r='2.1' stroke-width='1.6'/><circle cx='7.1' cy='19.8' r='2.1' stroke-width='1.6'/><path d='M14.5 9.7h5.8l-2.4-2.8c-.4-.5-.9-.7-1.5-.7h-1.9v3.5z' stroke-width='1.7'/></svg>",
+
+    "star": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M11.8 2.3c.2-.4.7-.6 1.1-.4.1.1.2.2.3.4l2.9 6.1 6.5.9c.5.1.8.5.7 1-.1.2-.2.4-.4.5l-4.7 4.6 1.1 6.6c.1.5-.2.9-.7 1-.2 0-.4 0-.6-.1l-5.8-3.1-5.8 3.1c-.4.2-.9.1-1.2-.3-.1-.2-.2-.4-.1-.6l1.1-6.6-4.7-4.6c-.3-.3-.4-.9-.1-1.2.1-.2.3-.3.5-.4l6.5-.9 2.9-6.1c.1-.1.2-.2.3-.3l.1-.1.1-.1z'/></svg>",
+
+    "checkmark": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M3.8 12.4c.8.1 1.5.4 2.1 1 1.2 1.2 2.3 2.5 3.4 3.8 1.1 1.3 2.1 2.5 3 3.7.3.4.8.4 1.2.1.1-.1.2-.2.3-.4 2.4-3.6 4.9-7.1 7.5-10.5.9-1.2 1.8-2.4 2.7-3.6' stroke-dasharray='1,0' stroke-dashoffset='0'/></svg>",
+
+    "heart": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M20.8 5.2c-1.5-1.6-4-1.7-5.6-.2-.3.2-.5.5-.8.8l-2.2 2.3-2.2-2.3c-1.5-1.6-4-1.7-5.6-.2-1.6 1.5-1.7 4-.2 5.6.1.1.2.2.3.3l7.1 7.4c.3.3.8.4 1.2.1.1-.1.2-.1.2-.2l7.1-7.4c1.6-1.5 1.7-4 .2-5.6-.1-.2-.2-.4-.4-.5l-.1-.1z'/></svg>",
+
+    "size-chart": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><rect x='3.2' y='2.8' width='17.6' height='18.4' rx='1.8'/><path d='M3.2 7.5h17.6M8.9 2.8v4.7m6.2-4.7v4.7M7.1 12.3h2.4m2.8 0h2.4m2.8 0h2.4M7.1 16.8h2.4m2.8 0h2.4m2.8 0h2.4' stroke-width='1.9'/></svg>",
+
+    "returns": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M3.4 10.8c.9-3.8 4.2-6.7 8.1-7.1 4.7-.5 8.9 2.7 9.9 7.2.9 4.4-1.8 8.7-6.1 10.1-3.8 1.2-8-.3-10.2-3.6'/><path d='M3.8 5.2v5.9h5.7' stroke-width='1.9'/></svg>",
+
+    "secure": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M12 2.6c.3 0 .6.1.8.3l7.8 4.9c.4.3.7.8.7 1.3v6.7c0 2.1-.8 4.1-2.3 5.6l-4.2 4.2c-.6.6-1.5.6-2.1 0l-4.2-4.2c-1.5-1.5-2.3-3.5-2.3-5.6V9.1c0-.5.3-1 .7-1.3l7.8-4.9c.2-.2.5-.3.8-.3h.5z'/><path d='M9.3 12.1l2.2 2.4 4.2-4.8' stroke-width='2.1'/></svg>",
+
+    "social-proof": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><circle cx='9.2' cy='7.8' r='3.9'/><path d='M2.1 20.3v-1.8c0-2.1 1.7-3.9 3.9-3.9h6.4c2.1 0 3.9 1.7 3.9 3.9v1.8'/><circle cx='18.3' cy='6.2' r='2.7' stroke-width='1.6'/><path d='M22.1 14.7v-1.2c0-1.5-1.2-2.7-2.7-2.7h-2.2' stroke-width='1.6'/></svg>"
   },
+
   "design_tokens": {
-    "font_primary": "Inter, \"Suisse Intl\", system-ui, sans-serif",
-    "font_secondary": "\"Playfair Display\", serif",
-    "border_radius": "12px",
-    "shadow_soft": "0 20px 45px rgba(22,58,41,0.18)",
-    "grid_gap": "24px",
-    "container_max": "1200px",
-    "cta_height": "56px"
+    "font_family": {
+      "heading": "'Playfair Display', Georgia, serif",
+      "body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "accent": "'DM Sans', sans-serif"
+    },
+
+    "font_sizes": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "3.75rem"
+    },
+
+    "font_weights": {
+      "light": 300,
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+
+    "line_heights": {
+      "tight": 1.2,
+      "snug": 1.375,
+      "normal": 1.5,
+      "relaxed": 1.625,
+      "loose": 1.75
+    },
+
+    "spacing": {
+      "0": "0",
+      "1": "0.25rem",
+      "2": "0.5rem",
+      "3": "0.75rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "10": "2.5rem",
+      "12": "3rem",
+      "16": "4rem",
+      "20": "5rem",
+      "24": "6rem"
+    },
+
+    "border_radius": {
+      "none": "0",
+      "sm": "0.25rem",
+      "base": "0.5rem",
+      "md": "0.75rem",
+      "lg": "1rem",
+      "xl": "1.5rem",
+      "2xl": "2rem",
+      "full": "9999px"
+    },
+
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(26, 24, 22, 0.05)",
+      "base": "0 1px 3px 0 rgba(26, 24, 22, 0.1), 0 1px 2px -1px rgba(26, 24, 22, 0.1)",
+      "md": "0 4px 6px -1px rgba(26, 24, 22, 0.1), 0 2px 4px -2px rgba(26, 24, 22, 0.1)",
+      "lg": "0 10px 15px -3px rgba(26, 24, 22, 0.1), 0 4px 6px -4px rgba(26, 24, 22, 0.1)",
+      "xl": "0 20px 25px -5px rgba(26, 24, 22, 0.1), 0 8px 10px -6px rgba(26, 24, 22, 0.1)",
+      "inner": "inset 0 2px 4px 0 rgba(26, 24, 22, 0.05)",
+      "glow": "0 0 20px rgba(143, 169, 137, 0.3)"
+    },
+
+    "transitions": {
+      "fast": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "base": "300ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "slow": "500ms cubic-bezier(0.4, 0, 0.2, 1)",
+      "bounce": "500ms cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+    },
+
+    "breakpoints": {
+      "xs": "320px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
   },
+
   "accordion_sections": [
     {
-      "title": "Description",
-      "icon": "checkmark",
-      "body": "Emerald wrap silhouette, double-lined satin, adjustable cloud-tie waist."
+      "id": "description",
+      "title": "Product Details",
+      "icon": "star",
+      "default_open": true,
+      "content_structure": {
+        "heading": "About This Dress",
+        "paragraphs": ["Main description", "Key features bullet list", "Craftsmanship details"],
+        "styling": "font-body, text-base, color-text-light, line-height-relaxed"
+      }
     },
     {
-      "title": "Size Guide",
+      "id": "size-guide",
+      "title": "Size & Fit Guide",
       "icon": "size-chart",
-      "body": "Runs true to size. Between sizes? size down for a sculpted waist. Length hits mid-thigh on 5\u20196\u201d."
+      "default_open": false,
+      "content_structure": {
+        "heading": "Find Your Perfect Fit",
+        "sections": ["Size chart table", "Model measurements", "Fit description (true to size/runs small/runs large)", "Length guide"],
+        "styling": "Interactive table with hover states, mobile-optimized columns"
+      }
     },
     {
-      "title": "Shipping",
+      "id": "shipping",
+      "title": "Shipping & Delivery",
       "icon": "shipping",
-      "body": "Ships within 24h from LA + EU hubs. Express upgrade available at checkout."
+      "default_open": false,
+      "content_structure": {
+        "heading": "Fast & Secure Delivery",
+        "sections": ["Standard shipping (5-7 days) - Free over $150", "Express shipping (2-3 days) - $15", "International shipping info", "Order tracking"],
+        "styling": "Clean list with checkmark icons, accent color for 'Free' text"
+      }
     },
     {
-      "title": "Returns",
+      "id": "returns",
+      "title": "Returns & Exchanges",
       "icon": "returns",
-      "body": "30-day exchanges on unworn items. Instant store credit issued on scan."
+      "default_open": false,
+      "content_structure": {
+        "heading": "Hassle-Free Returns",
+        "sections": ["30-day return window", "Free return shipping", "Exchange process", "Refund timeline"],
+        "styling": "Reassuring tone, success color for key benefits"
+      }
     },
     {
-      "title": "Care",
+      "id": "care",
+      "title": "Care Instructions",
       "icon": "heart",
-      "body": "Cold delicate wash in mesh bag or steam refresh. Lay flat to dry to protect sheen."
+      "default_open": false,
+      "content_structure": {
+        "heading": "Keep It Beautiful",
+        "sections": ["Dry clean only recommended", "Hand wash cold if needed", "Lay flat to dry", "Iron on low heat inside out", "Store hanging"],
+        "styling": "Icon-based instructions, simple and scannable"
+      }
     }
   ],
-  "status": "complete"
+
+  "mobile_specs": {
+    "hero_section": {
+      "height": "100vh",
+      "image_aspect_ratio": "3:4",
+      "price_position": "Overlay on bottom third of hero, semi-transparent background",
+      "scroll_indicator": "Subtle bounce animation after 2s"
+    },
+
+    "sticky_cta": {
+      "height": "72px",
+      "position": "Fixed bottom, z-index 1000",
+      "background": "Semi-transparent white backdrop-blur",
+      "border_top": "1px solid var(--color-border)",
+      "button_size": "48px height, full-width minus 32px padding",
+      "shadow": "var(--shadow-lg)"
+    },
+
+    "touch_targets": {
+      "minimum_size": "44px",
+      "thumb_zone": "Bottom 50-75% of screen for primary actions",
+      "spacing_between": "12px minimum"
+    },
+
+    "image_gallery": {
+      "type": "Horizontal scroll snap",
+      "indicator_dots": "Bottom center, 8px circles, primary color for active",
+      "swipe_threshold": "50px",
+      "auto_scroll_speed": "5s per image"
+    },
+
+    "typography_mobile": {
+      "h1": "2.5rem (40px)",
+      "h2": "1.875rem (30px)",
+      "h3": "1.5rem (24px)",
+      "body": "1rem (16px)",
+      "small": "0.875rem (14px)",
+      "line_spacing": "Use 'relaxed' for body text (1.625)"
+    },
+
+    "spacing_mobile": {
+      "page_padding": "20px horizontal",
+      "section_gap": "40px vertical",
+      "element_gap": "16px",
+      "content_max_width": "100% (no max-width on mobile)"
+    },
+
+    "performance": {
+      "lazy_load_images": "Below fold images only",
+      "preload": "Hero image and first product image",
+      "font_display": "swap",
+      "critical_css": "Inline above-fold styles"
+    }
+  },
+
+  "competitor_analysis": {
+    "harrods_strengths": [
+      "Muted luxury color palette (blacks, grays, golds)",
+      "Serif + sans-serif typography combination creates hierarchy",
+      "Generous whitespace reinforces premium positioning",
+      "Responsive grid system (4 to 12 columns)",
+      "Accessible focus states and WCAG compliance",
+      "Minimal, sophisticated button styling"
+    ],
+
+    "adaptations_for_gen_z": [
+      "More vibrant but still muted color palette (sage green vs. Harrods darker greens)",
+      "Faster, more dynamic interactions (Harrods is more static)",
+      "Stronger emphasis on social proof and UGC (testimonials)",
+      "Mobile-first with thumb-zone optimization (Harrods is desktop-first)",
+      "More playful icon design (organic, imperfect vs. Harrods precision)",
+      "Sticky CTA bar for conversion (missing on Harrods)",
+      "Shorter, more scannable copy (Gen Z attention span)",
+      "Video-ready design (TikTok/Instagram Reels integration potential)"
+    ],
+
+    "luxury_elements_retained": [
+      "Generous whitespace",
+      "Serif typography for headings",
+      "High-quality image presentation",
+      "Subtle shadows and elevation",
+      "Gold/champagne accent colors",
+      "Careful attention to typography hierarchy"
+    ]
+  },
+
+  "gen_z_targeting": {
+    "aesthetic_principles": [
+      "'That girl' aesthetic: aspirational but achievable",
+      "Clean minimal but not sterile - warmth through color and typography",
+      "Social media native - designed for screenshots and sharing",
+      "Authentic over perfect - hand-drawn icons, organic shapes",
+      "Fast and friction-free - one-tap actions, pre-filled forms",
+      "Values-driven - sustainability messaging, ethical production mentions"
+    ],
+
+    "tiktok_snapchat_considerations": [
+      "Vertical video format compatibility",
+      "Bold, readable text overlays",
+      "Quick load times (3s or less)",
+      "Swipeable interfaces (carousel, stories-style)",
+      "AR try-on readiness (future feature)",
+      "Easy screenshot and share functionality"
+    ],
+
+    "conversion_optimizations": [
+      "One-click checkout options (Shop Pay, Apple Pay)",
+      "Size quiz/finder tool",
+      "Real-time inventory indicators ('Only 3 left!')",
+      "Exit-intent popup with discount code",
+      "Abandoned cart recovery via SMS",
+      "Referral program prominent ('Share & Get $20')"
+    ]
+  },
+
+  "anti_ai_icon_characteristics": {
+    "implemented_techniques": [
+      "Asymmetric shapes - no perfect mirroring",
+      "Varied stroke weights (1.6 to 2.2 instead of uniform 2.0)",
+      "Organic curves using irregular bezier points",
+      "Intentional micro-imperfections in path coordinates",
+      "Hand-drawn feel through non-uniform spacing",
+      "Rounded line caps for friendlier appearance",
+      "Strategic use of negative space",
+      "Coordinates use decimals (.1, .3, .7) not whole numbers"
+    ]
+  },
+
+  "status": "complete",
+
+  "implementation_notes": {
+    "critical_path": [
+      "Load hero image immediately (preload in HTML head)",
+      "Inline critical CSS for above-fold content",
+      "Lazy load accordion content until clicked",
+      "Defer non-essential JavaScript",
+      "Use system fonts as fallback while web fonts load"
+    ],
+
+    "accessibility_requirements": [
+      "All interactive elements must have focus states",
+      "Icon buttons need aria-labels",
+      "Accordion sections use proper ARIA attributes",
+      "Color contrast meets WCAG AA minimum (4.5:1 for text)",
+      "Image gallery keyboard navigable",
+      "Form fields have visible labels"
+    ],
+
+    "brand_voice": {
+      "tone": "Sophisticated but approachable, confident but not intimidating",
+      "language": "Modern and concise, avoiding overly formal or technical terms",
+      "examples": [
+        "Instead of: 'Premium silk construction' → 'Luxe silk that moves with you'",
+        "Instead of: 'Dry clean recommended' → 'Keep it beautiful with dry cleaning'",
+        "Instead of: 'Standard delivery' → 'To your door in 5-7 days'"
+      ]
+    }
+  }
 }

@@ -1,225 +1,281 @@
 {
-  "tagline": "Celestial Confidence in One Swirl",
-  "headlines": [
-    "The Gemini Green Dress That Lights Up Night Outs",
-    "One Dress, Two Personalities \u2014 Effortless Day-to-Night",
-    "Floaty Silhouette, Sculpted Waist: Meet Your Signature Look",
-    "Viral Green Glow With Built-In Confidence"
-  ],
-  "product_copy": "Designed for the Gemini girl who changes plans mid-text, this emerald wrap dress combines a structured waist with a floaty, bias-cut skirt. Double-lined satin keeps things opaque, while the adjustable back ties make on-the-go fit tweaks easy. Wear it with sneakers at brunch or metallic heels after dark\u2014the drape holds its shape without feeling stiff.",
   "testimonials": [
     {
-      "name": "Lena P.",
-      "handle": "@lenapaints",
-      "platform": "TikTok",
+      "name": "Sophia M.",
+      "text": "literally OBSESSED with this dress!! wore it to my bday dinner and everyone was asking where I got it. the emerald color is giving expensive, the gems catch the light perfectly. main character energy fr 💚✨",
       "rating": 5,
-      "text": "Posted a get-ready-with-me in this dress and the comments blew up. The sheen catches studio lights perfectly."
+      "platform": "tiktok",
+      "avatar_initial": "S"
     },
     {
-      "name": "Marisol V.",
-      "handle": "@mari.vibes",
-      "platform": "TikTok",
+      "name": "Emma K.",
+      "text": "this dress is absolutley everything!! got so many compliments at my friends wedding. the beading is insane and it fits like a glove. giving that girl aesthetic for real",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "E"
+    },
+    {
+      "name": "Ava T.",
+      "text": "okay but this dress made me feel like THAT girl. wore it for nye and literally stopped traffic. the green is so vibrant and the sparkle?? unmatched. 10/10 recommend",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "A"
+    },
+    {
+      "name": "Mia R.",
+      "text": "i'm not even joking when i say this is the best dress i've ever owned. went to a rooftop party and got asked for my instagram at least 5 times lol. the fit is perfection and it photographs amazing",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "M"
+    },
+    {
+      "name": "Isabella C.",
+      "text": "this dress is a vibe!! wore it on a date and he literally said 'wow' when he saw me. the emerald color makes my skin glow and the beading is so detailed. obsessed doesn't even cover it",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "I"
+    },
+    {
+      "name": "Charlotte L.",
+      "text": "POV: you're looking for a dress that will make everyone turn heads... THIS IS IT. wore it to a gala and felt like royalty. the quality is insane for the price, gems stayed on perfectly all night",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "C"
+    },
+    {
+      "name": "Amelia W.",
+      "text": "not me gatekeeping this dress from my friends 😭 it's TOO good. the green is such a unique shade and the sparkle is chef's kiss. got compliments from literal strangers",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "A"
+    },
+    {
+      "name": "Harper B.",
+      "text": "this dress slayssss. wore it to my college formal and everyone was shook. the fit is so flattering and it doesn't ride up when you dance!! also the beading didn't scratch me at all",
       "rating": 4,
-      "text": "Love the twirl factor! Fabric is thicker than expected which is great, just wish shipping was a bit faster."
+      "platform": "tiktok",
+      "avatar_initial": "H"
     },
     {
-      "name": "Keisha D.",
-      "handle": "@keishadrops",
-      "platform": "TikTok",
+      "name": "Evelyn P.",
+      "text": "okay so i saw this on tiktok and had to get it... BEST DECISION EVER. the emerald green is so rich and luxurious. wore it to a music festival and got stopped for photos constantly",
       "rating": 5,
-      "text": "The tie waist lets me cinch it for date night then loosen for dancing. Total Gemini energy."
+      "platform": "tiktok",
+      "avatar_initial": "E"
     },
     {
-      "name": "Hana K.",
-      "handle": "@hanaverse",
-      "platform": "TikTok",
+      "name": "Abigail S.",
+      "text": "this dress is giving EXPENSIVE. like people thought it was designer when i wore it out. the gems are so sparkly and the fabric feels premium. 100% worth it",
       "rating": 5,
-      "text": "Filmed a transition and the color stayed true even under neon club lights."
+      "platform": "tiktok",
+      "avatar_initial": "A"
     },
     {
-      "name": "Gina T.",
-      "handle": "@ginatwist",
-      "platform": "TikTok",
+      "name": "Emily D.",
+      "text": "wore this to my graduation dinner and my whole family was obsessed!! my mom even asked to borrow it lol. the green looks good on literally every skin tone. runs slightly small tho so maybe size up",
+      "rating": 4,
+      "platform": "tiktok",
+      "avatar_initial": "E"
+    },
+    {
+      "name": "Madison F.",
+      "text": "if you're on the fence about buying this... JUST DO IT. i wore it to a yacht party and felt like a celeb. the beading is so intricate and catches the light beautifully. no regrets",
+      "rating": 5,
+      "platform": "tiktok",
+      "avatar_initial": "M"
+    },
+    {
+      "name": "Olivia H.",
+      "text": "The most photogenic dress I own 📸 The emerald green photographs beautifully both in natural light and at night. Got so many likes on my post! The embellishments add the perfect amount of sparkle without being over the top. Fits true to size, very flattering silhouette ✨",
+      "rating": 5,
+      "platform": "instagram",
+      "avatar_initial": "O"
+    },
+    {
+      "name": "Grace J.",
+      "text": "Living for this aesthetic 💚 The color is absolutely stunning and the beadwork is exquisite. Wore it for my birthday shoot and the photos came out incredible. The dress is comfortable enough to wear all day too. Highly recommend for anyone wanting that elevated look",
+      "rating": 5,
+      "platform": "instagram",
+      "avatar_initial": "G"
+    },
+    {
+      "name": "Lily N.",
+      "text": "This dress is pure elegance. The emerald hue is so rich and the gem detailing catches light from every angle. Perfect for creating that timeless, sophisticated aesthetic. I've worn it twice already and plan to get more use out of it. Absolutley gorgeous piece 💎",
+      "rating": 5,
+      "platform": "instagram",
+      "avatar_initial": "L"
+    },
+    {
+      "name": "Chloe V.",
+      "text": "Obsessed with how this photographs! The green is so vibrant and the sparkle creates the most beautiful effect in photos. Wore it to an art gallery opening and received endless compliments. The fit is perfection - cinches in all the right places ✨",
+      "rating": 5,
+      "platform": "instagram",
+      "avatar_initial": "C"
+    },
+    {
+      "name": "Zoey M.",
+      "text": "The dress of dreams 🌟 Everything about it screams luxury - from the color to the detailed beading. Got professional photos taken in this and they turned out magazine-worthy. The quality exceeded my expectations. Worth every penny!",
+      "rating": 5,
+      "platform": "instagram",
+      "avatar_initial": "Z"
+    },
+    {
+      "name": "Aria K.",
+      "text": "Such a statement piece! The emerald color is eye-catching and the embellishments add that perfect touch of glam. Great for creating content - it looks expensive and photographs beautifully. Only downside is it needs to be dry cleaned but that's expected for this quality",
+      "rating": 4,
+      "platform": "instagram",
+      "avatar_initial": "A"
+    },
+    {
+      "name": "Scarlett R.",
+      "text": "This dress is incredible! The craftsmanship is top-tier and you can really see the attention to detail in the beadwork. Perfect for that elevated, chic aesthetic. I styled it with gold jewelry and got so many saves on my post 💚✨",
+      "rating": 5,
+      "platform": "instagram",
+      "avatar_initial": "S"
+    },
+    {
+      "name": "Victoria L.",
+      "text": "I purchased this dress for my daughter's 21st birthday party and I have to say, I was thoroughly impressed with the quality. The emerald green is a beautiful, rich color and the beading is very well done - not a single gem has fallen off despite a full night of dancing. She received countless compliments and even had strangers asking where she got it. The dress is lined well and doesn't feel cheap at all. Shipping was prompt and it arrived exactly as described. Would definitely recommend for special occasions!",
+      "rating": 5,
+      "platform": "facebook",
+      "avatar_initial": "V"
+    },
+    {
+      "name": "Jennifer S.",
+      "text": "What a stunning dress! I wore this to my niece's wedding and felt absolutely beautiful. The emerald color is so flattering and the sparkle from the gems is just enough - not too gaudy. The fabric is good quality and the construction is solid. I'm usually a size 8 and ordered a medium which fit perfectly. The length hit just above my knee which was ideal. Only minor issue is that the beading can catch on things if you're not careful, but that's to be expected with embellished pieces. Overall very happy with this purchase!",
+      "rating": 5,
+      "platform": "facebook",
+      "avatar_initial": "J"
+    },
+    {
+      "name": "Rebecca T.",
+      "text": "Gorgeous dress with beautiful detailing! I bought this for a corporate gala and it was perfect - elegant but still eye-catching. The quality is excellent and you can tell it's well-made. The emerald green is such a sophisticated color and works well for evening events. I got lots of compliments throughout the night. The dress is comfortable to wear for extended periods and the fit is very flattering. Delivery was quick and it came beautifully packaged. Would buy from this seller again!",
+      "rating": 5,
+      "platform": "facebook",
+      "avatar_initial": "R"
+    },
+    {
+      "name": "Michelle B.",
+      "text": "Really lovely dress but runs a bit small. I'm usually a size 10 and ordered a large but it was quite snug around the bust area. The emerald color is beautifull and the beading is very pretty. The quality seems good overall, though I did notice one small loose thread. Still a nice dress for the price, just be aware of the sizing",
       "rating": 3,
-      "text": "Cute but I should have steamed it longer\u2014wrinkles showed on my live. Still keeping it."
+      "platform": "facebook",
+      "avatar_initial": "M"
     },
     {
-      "name": "Zoie R.",
-      "handle": "@zoiesroom",
-      "platform": "TikTok",
+      "name": "Amanda G.",
+      "text": "Excellent quality dress with beautiful embellishments. The emerald green is absolutely stunning and the beadwork is intricate and well-secured. I ordered this for a black-tie event and was very pleased with both the product quality and the delivery service. The dress arrived within 5 business days, well-packaged with no damage. The fabric is substantial and feels luxurious. The fit is true to size based on the size chart provided. Customer service was also responsive when I had questions before ordering. Highly recommend this product for formal occasions.",
       "rating": 5,
-      "text": "Got 12k saves overnight. Everyone keeps asking where the 'enchanted green dress' is from."
+      "platform": "trustpilot",
+      "avatar_initial": "A"
     },
     {
-      "name": "Faith L.",
-      "handle": "@faithloops",
-      "platform": "TikTok",
-      "rating": 5,
-      "text": "The wrap stays put even when I'm filming choreo. No wardrobe scares!"
-    },
-    {
-      "name": "Isela M.",
-      "handle": "@isela.moves",
-      "platform": "TikTok",
+      "name": "Katherine W.",
+      "text": "Very satisfied with this purchase. The dress quality is impressive - the beading is securely attached and the fabric is well-constructed. Delivery was prompt and the item matched the description accurately. The emerald color is rich and photographs well. I would have given 5 stars but the dress needed steaming upon arrival due to packaging creases. Overall a good experience and I would order from this company again.",
       "rating": 4,
-      "text": "Color is richer IRL. Needed to pin the neckline but that's just my petite frame."
+      "platform": "trustpilot",
+      "avatar_initial": "K"
     },
     {
-      "name": "Roxie B.",
-      "handle": "@roxiebytes",
-      "platform": "TikTok",
-      "rating": 5,
-      "text": "My Gemini twin sis stole it already. We share but I want another one lol."
-    },
-    {
-      "name": "Taryn Q.",
-      "handle": "@tarynquick",
-      "platform": "TikTok",
-      "rating": 5,
-      "text": "Styled it with chunky boots and a moto jacket\u2014people thought it was a designer sample."
-    },
-    {
-      "name": "Madi H.",
-      "handle": "@madihow",
-      "platform": "TikTok",
+      "name": "Patricia H.",
+      "text": "Good quality dress with lovely detailing. The emerald green is a beautiful shade and the gems are well-applied. Delivery took slightly longer than expected (7 business days instead of 5) but the dress arrived in perfect condition. The sizing runs slightly small so I would recommend ordering one size up. The dress itself is well-made and suitable for formal events. Customer service was helpful when I inquired about shipping.",
       "rating": 4,
-      "text": "It swishes dramatically on camera. Hem is a tad long on my 5ft2 frame but easy to hem."
+      "platform": "trustpilot",
+      "avatar_initial": "P"
     },
     {
-      "name": "Noor E.",
-      "handle": "@noor.edit",
-      "platform": "TikTok",
+      "name": "Sarah M.",
+      "text": "Beautiful dress! The emerald color is exactly as shown in the photos. I'm 5'6\" and 140lbs and the medium fit perfectly. The beading is secure and didn't shed at all during wear. Great for cocktail parties or evening events. Only note is that it's hand wash only which is a bit inconvenient.",
       "rating": 5,
-      "text": "Definietly the most flattering green in my closet. Matches my aura nails perfectly."
+      "platform": "google",
+      "avatar_initial": "S"
     },
     {
-      "name": "Sara L.",
-      "handle": "@glowbysara",
-      "platform": "Instagram",
-      "rating": 5,
-      "text": "Shot a carousel in Santorini and the emerald made the blue domes pop."
-    },
-    {
-      "name": "Alicia W.",
-      "handle": "@aliciawears",
-      "platform": "Instagram",
+      "name": "Jessica L.",
+      "text": "Lovely dress with great attention to detail. I usually wear a size 6 and ordered a small which fit well. The length is good for someone 5'5\"-5'7\". The emerald green is vibrant and the sparkle is noticeable but not overwhelming. Wore it to a wedding and recieved lots of compliments. The lining is comfortable and not scratchy.",
       "rating": 4,
-      "text": "Only note is to order your true size; I sized up unnecessarily. Gorgeous otherwise."
+      "platform": "google",
+      "avatar_initial": "J"
     },
     {
-      "name": "Camille N.",
-      "handle": "@styledbycam",
-      "platform": "Instagram",
-      "rating": 5,
-      "text": "My followers thought it was Reformation\u2014quality feels similar but softer lining."
-    },
-    {
-      "name": "Ivanna K.",
-      "handle": "@ivanna.keeps",
-      "platform": "Instagram",
-      "rating": 5,
-      "text": "Wore it to a rooftop wedding; stayed comfortable through 6 hours of toasts."
-    },
-    {
-      "name": "Brielle D.",
-      "handle": "@briellexoxo",
-      "platform": "Instagram",
+      "name": "Nicole P.",
+      "text": "Pretty dress but sizing is tricky. I'm a size 8 (US) and ordered a large based on reviews saying it runs small, but it was still quite fitted. The emerald color is gorgeous and the quality is decent. The beading looks expensive. Just be prepared for a snug fit - it's definitely more bodycon than the photos suggest.",
       "rating": 3,
-      "text": "Hue is slightly cooler than the feed photo. Still photogenic though."
+      "platform": "google",
+      "avatar_initial": "N"
     },
     {
-      "name": "Jessi G.",
-      "handle": "@jessi.gem",
-      "platform": "Instagram",
+      "name": "Rachel K.",
+      "text": "Great dress for the price! The green is stunning and the gems are very sparkly. I'm 5'4\" and 130lbs and got a small which fit perfectly. The dress hits right at my knees. Easy to dress up or down. Would definitely recommend checking the size chart carefully before ordering.",
       "rating": 5,
-      "text": "Stretch panel in the back makes it breathing-friendly after pasta."
-    },
-    {
-      "name": "Nadia T.",
-      "handle": "@nadia.traces",
-      "platform": "Instagram",
-      "rating": 5,
-      "text": "Layered a mesh top underneath and it still sat smooth\u2014no bunching."
-    },
-    {
-      "name": "Ona R.",
-      "handle": "@onarumi",
-      "platform": "Instagram",
-      "rating": 5,
-      "text": "Everyone DM'd me asking for the link. The waist snatch is unreal."
-    },
-    {
-      "name": "Cheryl P.",
-      "handle": "CherylP",
-      "platform": "Facebook",
-      "rating": 5,
-      "text": "Bought for my daughter's graduation. The adjustable straps meant one dress worked for rehearsal and ceremony."
-    },
-    {
-      "name": "Greta S.",
-      "handle": "GretaSews",
-      "platform": "Facebook",
-      "rating": 4,
-      "text": "Seam finishing is neat, which is the first thing I check as a sewist. Arrived a day late though."
-    },
-    {
-      "name": "Lydia B.",
-      "handle": "LydiaB",
-      "platform": "Facebook",
-      "rating": 5,
-      "text": "Wore it to book club and everyone assumed it was custom dyed."
-    },
-    {
-      "name": "Tamara F.",
-      "handle": "TamF",
-      "platform": "Facebook",
-      "rating": 4,
-      "text": "I pair it with a cropped cardigan for work\u2014drapes nicely even when seated."
-    },
-    {
-      "name": "Owen C.",
-      "handle": "OwenC",
-      "platform": "Trustpilot",
-      "rating": 5,
-      "text": "Customer care replied within minutes when I changed sizes. Dress fits perfectly now."
-    },
-    {
-      "name": "Delia R.",
-      "handle": "DeliaR",
-      "platform": "Trustpilot",
-      "rating": 4,
-      "text": "Packaging was eco-friendly and cute. Only gripe is minor threads to snip."
-    },
-    {
-      "name": "Irene M.",
-      "handle": "IreneM",
-      "platform": "Trustpilot",
-      "rating": 5,
-      "text": "Recieved compliments from strangers twice in the same afternoon."
-    },
-    {
-      "name": "Priya S.",
-      "handle": "PriyaStyle",
-      "platform": "Google",
-      "rating": 5,
-      "text": "Love that the lining is breathable\u2014no sticking even in Miami humidity."
-    },
-    {
-      "name": "Callie V.",
-      "handle": "CallieV",
-      "platform": "Google",
-      "rating": 4,
-      "text": "Color stayed vibrant after two gentle cycles. Followed their wash guide and it worked."
-    },
-    {
-      "name": "June Y.",
-      "handle": "JuneY",
-      "platform": "Google",
-      "rating": 5,
-      "text": "Zip is smooth and hidden; looks luxe without the price tag."
+      "platform": "google",
+      "avatar_initial": "R"
     }
   ],
-  "cta_primary": "Get the Gemini Glow",
-  "cta_secondary": "Check Size Guide",
+  "headlines": {
+    "primary_hero": "Emerald Elegance. Turn Heads Everywhere.",
+    "secondary_subheadline": "The dress that makes every entrance unforgettable",
+    "alternative_hero_1": "Your Main Character Moment Starts Here",
+    "alternative_hero_2": "Luxury That Speaks Volumes",
+    "alternative_hero_3": "Embellished Elegance, Effortless Confidence",
+    "cta_variations": [
+      "Claim Your Dress Now",
+      "Get Your Emerald Moment",
+      "Shop The Dress",
+      "Make It Yours",
+      "Add To Cart - Limited Stock"
+    ],
+    "trust_badges": [
+      "Free Shipping On All Orders",
+      "30-Day Returns Guaranteed",
+      "Secure Checkout",
+      "10,000+ Happy Customers"
+    ]
+  },
+  "product_copy": {
+    "short_description": "The Emerald Elegance Dress is your ticket to unforgettable moments. Featuring intricate hand-embellished detailing and a rich emerald hue, this dress combines luxury craftsmanship with a flattering silhouette that photographs beautifully. Perfect for making every occasion extraordinary.",
+    "long_description": "Step into the spotlight with the Emerald Elegance Dress - where sophisticated design meets viral-worthy style. This stunning piece features meticulously hand-placed gem embellishments that catch the light from every angle, creating an ethereal sparkle that photographs beautifully both day and night. The rich emerald green hue is universally flattering, complementing all skin tones while making a bold, confident statement. Crafted with premium fabrics and finished with a comfortable lining, this dress offers both luxury and wearability. The tailored silhouette flatters your figure while allowing freedom of movement - perfect for dancing the night away. Whether you're attending a wedding, gala, birthday celebration, or upscale dinner, this dress delivers that main character energy you've been searching for. Each piece is quality-checked to ensure every gem is securely attached and every seam is perfectly finished.",
+    "features": [
+      "Hand-embellished with premium gems that won't shed or fall off",
+      "Rich emerald green fabric that photographs beautifully in any lighting",
+      "Flattering tailored silhouette that cinches in all the right places",
+      "Soft, non-scratchy lining for all-day comfort",
+      "Quality construction with reinforced seams and secure beading"
+    ]
+  },
+  "accordion_content": {
+    "description": {
+      "title": "Description",
+      "content": "The Emerald Elegance Dress is a statement piece that combines luxury aesthetics with practical wearability. Each dress features hand-placed embellishments using premium-quality gems that are securely attached to ensure durability. The emerald green fabric is carefully selected for its rich, vibrant color that maintains its beauty through multiple wears. The dress is fully lined with a soft, comfortable material that prevents irritation and provides a smooth silhouette. The tailored fit is designed to flatter various body types while allowing comfortable movement. Perfect for weddings, galas, cocktail parties, birthday celebrations, date nights, and any occasion where you want to make a memorable impression."
+    },
+    "size_guide": {
+      "title": "Size Guide",
+      "content": "**Please note: This dress runs slightly fitted. If between sizes, we recommend sizing up.**\n\n**Small:** Bust 32-34\", Waist 25-27\", Hips 35-37\", Length 35\"\n**Medium:** Bust 34-36\", Waist 27-29\", Hips 37-39\", Length 36\"\n**Large:** Bust 36-38\", Waist 29-31\", Hips 39-41\", Length 37\"\n**X-Large:** Bust 38-40\", Waist 31-33\", Hips 41-43\", Length 38\"\n\n**Fit Guide:**\n- Best for heights 5'4\" - 5'8\"\n- Dress hits just above the knee for most body types\n- Bodycon fit with slight stretch\n- If you prefer a looser fit, order one size up\n\n**Still unsure?** Contact our customer service team for personalized sizing assistance!"
+    },
+    "shipping": {
+      "title": "Shipping & Delivery",
+      "content": "**Free Standard Shipping on All Orders**\n\n**Processing Time:** 1-2 business days\n**Delivery Time:** 5-7 business days (standard shipping)\n**Express Shipping:** Available at checkout for 2-3 day delivery\n\n**International Shipping:** We ship worldwide! International delivery times vary by location (typically 7-14 business days).\n\n**Tracking:** You'll receive a tracking number via email once your order ships.\n\n**Packaging:** Your dress arrives beautifully packaged and protected to ensure it reaches you in perfect condition. Please note that the dress may need light steaming upon arrival to remove any packaging creases.\n\n**Questions?** Contact us at support@emeraldelegance.com"
+    },
+    "returns": {
+      "title": "Returns & Exchanges",
+      "content": "**30-Day Return Policy**\n\nWe want you to absolutely love your dress! If you're not completely satisfied, you can return or exchange it within 30 days of delivery.\n\n**Return Requirements:**\n- Item must be unworn, unwashed, and in original condition\n- All tags must be attached\n- Original packaging preferred but not required\n- Proof of purchase required\n\n**How to Return:**\n1. Contact us at support@emeraldelegance.com within 30 days\n2. We'll send you a prepaid return label\n3. Pack the dress securely and ship it back\n4. Refund processed within 5-7 business days of receiving your return\n\n**Exchanges:** Free exchanges for different sizes! Just let us know your preferred size and we'll ship it out as soon as we receive your return.\n\n**Final Sale Items:** Sale items marked as \"final sale\" cannot be returned or exchanged.\n\n**Questions?** Our customer service team is here to help!"
+    },
+    "care_instructions": {
+      "title": "Care Instructions",
+      "content": "**Keep your Emerald Elegance Dress looking pristine with these care tips:**\n\n**Cleaning:**\n- Dry clean only (recommended for best results)\n- Alternatively: Hand wash in cold water with gentle detergent\n- Do not machine wash - the embellishments require gentle care\n- Do not bleach\n\n**Drying:**\n- Lay flat to dry away from direct sunlight\n- Do not tumble dry\n- Do not wring or twist the fabric\n\n**Storage:**\n- Hang on a padded hanger to maintain shape\n- Store in a breathable garment bag\n- Keep away from direct sunlight to preserve color\n- Avoid storing in plastic bags long-term\n\n**Ironing:**\n- Steam only - do not iron directly on embellishments\n- Use low heat if ironing is necessary\n- Iron inside-out to protect beading\n\n**Special Notes:**\n- The embellishments are securely attached but can catch on jewelry or rough surfaces - wear carefully\n- Avoid contact with perfumes, lotions, and makeup before wearing\n- If a gem becomes loose, secure it with fabric glue before it falls off\n\n**Pro Tip:** A handheld steamer is perfect for refreshing the dress between wears!"
+    }
+  },
+  "metadata": {
+    "generated_at": "2025-12-02",
+    "agent": "1B",
+    "product": "Emerald Elegance Dress",
+    "target_audience": "Gen Z women 18-35",
+    "platforms_covered": ["TikTok", "Instagram", "Facebook", "Trustpilot", "Google"],
+    "total_testimonials": 30,
+    "rating_distribution": {
+      "5_star": 21,
+      "4_star": 6,
+      "3_star": 3
+    }
+  },
   "status": "complete"
 }
