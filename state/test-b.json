@@ -1,6 +1,33 @@
 {
-  "test": "Test B - $19 Popup Flow",
-  "popup_visible": true,
-  "exchange_url": "https://simpleswap.io/exchange?id=20oc1zyw29xyafmn",
-  "passed": true
+  "test": "B - $19 Popup Flow",
+  "passed": true,
+  "secondary_cta_visible": true,
+  "secondary_cta_text": "Reserve with $19 Deposit",
+  "popup_appeared": true,
+  "popup_header": "COMPLETE YOUR GLOW-UP",
+  "popup_title": "Add Aura Care Kit?",
+  "popup_content_correct": true,
+  "popup_details": {
+    "care_kit_items": [
+      "Travel-size garment steamer wand",
+      "Anti-static satin refresh spray",
+      "Crinkle brush for wrap ties",
+      "Extend the life of your dress"
+    ],
+    "care_kit_price": "$19",
+    "care_kit_original_price": "$29",
+    "accept_button": "YES! ADD CARE KIT - $29 TOTAL",
+    "decline_button": "No thanks, just the dress"
+  },
+  "decline_redirects": true,
+  "redirect_url": "https://simpleswap.io/exchange?id=1jnl86gq0k8amor8",
+  "redirect_domain": "simpleswap.io",
+  "notes": "All test steps passed successfully. Secondary CTA button triggers order bump popup with correct content. Popup shows COMPLETE YOUR GLOW-UP header, Add Aura Care Kit title, care kit details with $19 price (discounted from $29), and both accept ($29 total) and decline buttons. Decline button correctly redirects to SimpleSwap exchange page. Code review confirms $19 amount is passed correctly via window.currentBasePrice variable.",
+  "timestamp": "2025-12-02T00:00:00Z",
+  "test_url": "https://green-dress-gemini-v7.netlify.app/",
+  "code_verification": {
+    "decline_function": "processOrder(window.currentBasePrice || 19)",
+    "base_price_set": "window.currentBasePrice = basePrice (19)",
+    "confirmed": true
+  }
 }

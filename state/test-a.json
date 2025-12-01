@@ -1,7 +1,22 @@
 {
-  "test": "Test A - $59 Direct Flow",
-  "exchange_url": "https://simpleswap.io/exchange?id=abibw2fx16yfr44j",
-  "exchange_domain": "simpleswap.io",
+  "test": "A - $59 Direct Flow",
   "passed": true,
-  "popup_visible": false
+  "primary_cta_visible": true,
+  "primary_cta_clickable": true,
+  "popup_appeared": false,
+  "redirect_url": "https://simpleswap.io/exchange?id=cvdae7tneeyo6pu8",
+  "api_endpoint_called": "https://simpleswap-automation-1.onrender.com/buy-now",
+  "api_response_status": 200,
+  "exchange_id": "cvdae7tneeyo6pu8",
+  "notes": "Test PASSED. Primary CTA button was visible and clickable. Clicking the button triggered a POST request to /buy-now endpoint (returned 200), and user was redirected directly to simpleswap.io with a valid exchange ID. NO popup appeared during the process. The flow works exactly as expected - $59 purchase goes directly to SimpleSwap without any intermediate popup.",
+  "timestamp": "2025-12-02T07:05:31Z",
+  "test_details": {
+    "selected_size": "M",
+    "button_text": "CLAIM YOUR DRESS NOW - $59",
+    "initial_page_url": "https://green-dress-gemini-v7.netlify.app/",
+    "final_page_url": "https://simpleswap.io/exchange?id=cvdae7tneeyo6pu8",
+    "console_warnings": [
+      "[TikTok Pixel] - Missing email and phone number (expected, not a blocker)"
+    ]
+  }
 }

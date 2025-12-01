@@ -1,13 +1,26 @@
 {
-  "test": "Test D - Pool Integration",
-  "pools": {
-    "19": 15,
-    "29": 15,
-    "59": 15
-  },
-  "$19": 15,
-  "$29": 15,
-  "$59": 15,
+  "test": "D - Pool Integration",
+  "passed": true,
+  "pool_url": "https://simpleswap-automation-1.onrender.com",
+  "health": "ok",
+  "pool_19": 15,
+  "pool_29": 15,
+  "pool_59": 15,
   "total": 45,
-  "passed": true
+  "requirements_met": {
+    "19_min_5": true,
+    "29_min_5": true,
+    "59_min_5": true,
+    "total_min_20": true
+  },
+  "notes": "All requirements exceeded. Pool is fully stocked with 15 exchanges per tier (45 total). Health status is healthy. Buy-now endpoint accepts POST requests with amountUSD parameter and returns instant exchange URLs. Server is running in production mode with dynamic pool features including instant replenishment, 3 retries with exponential backoff, and automatic health checks.",
+  "timestamp": "2025-12-02T00:00:03Z",
+  "additional_info": {
+    "service_version": "5.0.0-BULLETPROOF",
+    "mode": "dynamic-pool",
+    "total_consumed": 18,
+    "total_replenished": 19,
+    "failed_replenishments": 0,
+    "endpoint_test": "buy-now endpoint confirmed working with POST method and amountUSD parameter"
+  }
 }

@@ -1,6 +1,6 @@
 """
-Collage Splitter Script
-Splits grid-based collage images into individual photos
+Collage Splitter Script - Fixed Grid Version
+Splits grid-based collage images into individual photos using fixed grid dimensions
 """
 
 import cv2
@@ -8,152 +8,94 @@ import numpy as np
 from pathlib import Path
 import json
 
-def detect_grid_structure(image):
+def split_collage_fixed_grid(image_path, output_folder, start_index, rows, cols):
     """
-    Detect grid structure by finding white border lines
-
-    Args:
-        image: Input image array
-
-    Returns:
-        tuple: (rows, cols, row_positions, col_positions)
-    """
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # Detect vertical lines (column separators)
-    vertical_projection = np.mean(gray, axis=0)
-    # Find white borders (high intensity)
-    threshold = np.percentile(vertical_projection, 90)
-    vertical_borders = vertical_projection > threshold
-
-    # Find transitions (start of borders)
-    col_positions = []
-    in_border = False
-    for i, is_border in enumerate(vertical_borders):
-        if is_border and not in_border:
-            col_positions.append(i)
-            in_border = True
-        elif not is_border and in_border:
-            in_border = False
-
-    # Detect horizontal lines (row separators)
-    horizontal_projection = np.mean(gray, axis=1)
-    threshold = np.percentile(horizontal_projection, 90)
-    horizontal_borders = horizontal_projection > threshold
-
-    row_positions = []
-    in_border = False
-    for i, is_border in enumerate(horizontal_borders):
-        if is_border and not in_border:
-            row_positions.append(i)
-            in_border = True
-        elif not is_border and in_border:
-            in_border = False
-
-    # Add image boundaries
-    col_positions = [0] + col_positions + [image.shape[1]]
-    row_positions = [0] + row_positions + [image.shape[0]]
-
-    rows = len(row_positions) - 1
-    cols = len(col_positions) - 1
-
-    return rows, cols, row_positions, col_positions
-
-def extract_cells(image, row_positions, col_positions):
-    """
-    Extract individual cells from grid
-
-    Args:
-        image: Input image
-        row_positions: List of row boundary positions
-        col_positions: List of column boundary positions
-
-    Returns:
-        list: List of extracted cell images
-    """
-    cells = []
-
-    for i in range(len(row_positions) - 1):
-        for j in range(len(col_positions) - 1):
-            y1 = row_positions[i]
-            y2 = row_positions[i + 1]
-            x1 = col_positions[j]
-            x2 = col_positions[j + 1]
-
-            # Extract cell with some padding removal to exclude borders
-            padding = 5
-            cell = image[y1+padding:y2-padding, x1+padding:x2-padding]
-
-            # Only add if cell is substantial
-            if cell.shape[0] > 50 and cell.shape[1] > 50:
-                cells.append(cell)
-
-    return cells
-
-def split_collage(image_path, output_folder, start_index=1):
-    """
-    Split a collage image into individual photos
+    Split a collage using fixed grid dimensions.
 
     Args:
         image_path: Path to collage image
         output_folder: Folder to save extracted images
         start_index: Starting number for output filenames
+        rows: Number of rows in grid
+        cols: Number of columns in grid
 
     Returns:
         int: Number of images extracted
     """
-    # Read image
     image = cv2.imread(str(image_path))
     if image is None:
         print(f"Error: Could not read {image_path}")
         return 0
 
-    # Detect grid structure
-    rows, cols, row_positions, col_positions = detect_grid_structure(image)
-    print(f"Detected {rows}x{cols} grid in {image_path.name}")
+    height, width = image.shape[:2]
+    cell_height = height // rows
+    cell_width = width // cols
 
-    # Extract cells
-    cells = extract_cells(image, row_positions, col_positions)
+    print(f"  Image: {width}x{height}, Grid: {cols}x{rows}, Cell: {cell_width}x{cell_height}")
 
-    # Save each cell
     saved_count = 0
-    for idx, cell in enumerate(cells):
-        output_name = f"testimonial-{start_index + idx:02d}.jpeg"
-        output_path = output_folder / output_name
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate cell boundaries
+            y1 = row * cell_height
+            y2 = (row + 1) * cell_height
+            x1 = col * cell_width
+            x2 = (col + 1) * cell_width
 
-        # Convert to RGB for JPEG saving
-        cell_rgb = cv2.cvtColor(cell, cv2.COLOR_BGR2RGB)
-        cell_bgr = cv2.cvtColor(cell_rgb, cv2.COLOR_RGB2BGR)
+            # Extract cell with small border trim (2px) to remove any grid lines
+            border = 2
+            cell = image[y1+border:y2-border, x1+border:x2-border]
 
-        # Save with high quality
-        cv2.imwrite(str(output_path), cell_bgr, [cv2.IMWRITE_JPEG_QUALITY, 95])
-        saved_count += 1
-        print(f"  Saved: {output_name}")
+            # Skip if cell is too small
+            if cell.shape[0] < 20 or cell.shape[1] < 20:
+                continue
+
+            # Save with sequential numbering
+            output_name = f"testimonial-{start_index + saved_count:02d}.jpeg"
+            output_path = output_folder / output_name
+
+            cv2.imwrite(str(output_path), cell, [cv2.IMWRITE_JPEG_QUALITY, 95])
+            saved_count += 1
+            print(f"    Saved: {output_name} ({cell.shape[1]}x{cell.shape[0]})")
 
     return saved_count
 
 def main():
     """Main execution function"""
 
-    # Setup paths
-    images_folder = Path("/Users/nelsonchan/Downloads/secretjeans TEMPLATE SMALL copy 2/images")
+    # Get the directory where this script lives (universal - works anywhere)
+    SCRIPT_DIR = Path(__file__).parent.resolve()
+
+    # All paths relative to script location
+    images_folder = SCRIPT_DIR / "images"
     testimonials_folder = images_folder / "testimonials"
     output_folder = images_folder / "testimonials"
-    state_folder = Path("/Users/nelsonchan/Downloads/secretjeans TEMPLATE SMALL copy 2/state")
+    state_folder = SCRIPT_DIR / "state"
 
-    # Ensure state folder exists
+    # Ensure folders exist
     state_folder.mkdir(exist_ok=True)
+    output_folder.mkdir(parents=True, exist_ok=True)
 
-    # Find collage images
-    collage_extensions = ['.png', '.jpg', '.jpeg', '.webp']
-    collage_files = []
-    for ext in collage_extensions:
-        collage_files.extend(testimonials_folder.glob(f'*{ext}'))
-
-    # Filter to only Gemini generated collages
-    collage_files = [f for f in collage_files if 'Gemini_Generated_Image' in f.name]
+    # Find collage images (files starting with 'collage-')
+    collage_files = sorted(testimonials_folder.glob('collage-*'))
 
     print(f"Found {len(collage_files)} collage files to process")
+
+    if len(collage_files) == 0:
+        print("No collage files found. Looking for files starting with 'collage-'")
+        print(f"Directory contents: {list(testimonials_folder.iterdir())}")
+        return {"status": "no_collages_found"}
+
+    # Define grid structure for each collage
+    # These will be auto-detected or can be manually specified
+    grid_configs = {
+        'collage-01': (3, 3),  # 3 rows x 3 cols = 9 images
+        'collage-02': (4, 3),  # 4 rows x 3 cols = 12 images
+        'collage-03': (4, 3),  # 4 rows x 3 cols = 12 images
+    }
+
+    # Default grid if not specified
+    default_grid = (3, 3)
 
     # Process each collage
     total_extracted = 0
@@ -164,10 +106,18 @@ def main():
     for collage_path in collage_files:
         try:
             print(f"\nProcessing: {collage_path.name}")
-            extracted = split_collage(collage_path, output_folder, current_index)
+
+            # Get grid config for this collage
+            collage_key = collage_path.stem  # filename without extension
+            rows, cols = grid_configs.get(collage_key, default_grid)
+
+            extracted = split_collage_fixed_grid(
+                collage_path, output_folder, current_index, rows, cols
+            )
             total_extracted += extracted
             current_index += extracted
             processed_collages.append(str(collage_path))
+
         except Exception as e:
             error_msg = f"Error processing {collage_path.name}: {str(e)}"
             print(error_msg)
