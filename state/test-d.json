@@ -1,0 +1,13 @@
+{
+  "test": "Test D - Pool Integration",
+  "pools": {
+    "19": 15,
+    "29": 15,
+    "59": 15
+  },
+  "$19": 15,
+  "$29": 15,
+  "$59": 15,
+  "total": 45,
+  "passed": true
+}

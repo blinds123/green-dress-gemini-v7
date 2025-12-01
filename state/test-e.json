@@ -1,0 +1,19 @@
+{
+  "test": "Test E - Performance & Design Audit",
+  "vitals": {
+    "domContentLoaded": 781,
+    "loadEvent": 2235,
+    "ttfb": 591
+  },
+  "asset_summary": {
+    "htmlBytes": 74802,
+    "imageCount": 19
+  },
+  "scores": {
+    "anti_ai": 9,
+    "premium": 8.8,
+    "conversion": 8.4,
+    "brand": 8.6
+  },
+  "passed": true
+}

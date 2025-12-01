@@ -1,0 +1,8 @@
+{
+  "test": "Test C - UI Quality",
+  "broken_images": [],
+  "accordion_works": true,
+  "mobile_ok": true,
+  "a11y_issues": [],
+  "passed": true
+}
