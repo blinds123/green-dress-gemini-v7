@@ -40,12 +40,33 @@ function showOrderBumpPopup() {
 }
 
 function processOrder(amount) {
-    // Redirect to SimpleSwap or Pool Logic
-    // For this protocol, we simulate the redirect or use the pool URL
-    const poolUrl = 'https://simpleswap-automation-1.onrender.com'; // Or from config
-    console.log(`Processing order for $${amount}`);
-    
-    // In a real scenario, this would POST to the pool or redirect to SimpleSwap with params
-    // For now, we'll redirect to a "success" page or the pool
-    window.location.href = `${poolUrl}/buy-now?amount=${amount}`;
+    const poolUrl = 'https://simpleswap-automation-1.onrender.com';
+    const btn = event.target;
+    const originalText = btn.innerText;
+    btn.innerText = 'Processing...';
+    btn.disabled = true;
+
+    fetch(`${poolUrl}/buy-now`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ amountUSD: amount })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.url) {
+                window.location.href = data.url;
+            } else {
+                alert('Error processing order. Please try again.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error processing order. Please try again.');
+            btn.innerText = originalText;
+            btn.disabled = false;
+        });
 }
