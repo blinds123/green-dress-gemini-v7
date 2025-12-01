@@ -4,11 +4,16 @@
   "pool_29": 15,
   "pool_59": 15,
   "total": 45,
-  "total_max_size": 45,
-  "mode": "dynamic-pool",
-  "persistence": "render_disk_enabled",
-  "health_status": "healthy",
-  "timestamp": "2025-11-30T22:37:42.981Z",
   "status": "complete",
-  "notes": "All pools well above minimum requirement of 5 exchanges per tier. Total of 45 exchanges available across all tiers."
+  "meta": {
+    "service": "SimpleSwap Dynamic Pool Server [PRODUCTION]",
+    "version": "5.0.0-BULLETPROOF",
+    "mode": "dynamic-pool",
+    "features": [
+      "Instant replenishment on consumption",
+      "3 retries with exponential backoff",
+      "60s health check catches failures",
+      "5min self-ping prevents sleep"
+    ]
+  }
 }

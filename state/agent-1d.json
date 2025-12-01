@@ -1,10 +1,5 @@
 {
-  "github_url": "https://github.com/blinds123/pinstripejeans-shop",
-  "netlify_url": "https://pinstripejeans-shop.netlify.app",
-  "netlify_admin_url": "https://app.netlify.com/projects/pinstripejeans-shop",
-  "netlify_project_id": "e1c82490-8f2e-4042-9247-1951bd7de185",
-  "git_origin_remote": "https://github.com/blinds123/pinstripejeans-shop.git",
-  "status": "complete",
-  "timestamp": "2025-12-01",
-  "notes": "Repository created and remote updated successfully. Netlify site created and linked."
+  "github_url": "https://github.com/blinds123/green-dress-gemini-v7",
+  "netlify_url": "https://green-dress-gemini-v7.netlify.app",
+  "status": "complete"
 }

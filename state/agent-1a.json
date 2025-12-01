@@ -1,37 +1,81 @@
 {
-  "product_count": 5,
-  "testimonial_count": 19,
-  "testimonial_format": "uncropped_preserved",
-  "status": "complete",
-  "processing_details": {
-    "product_images": {
-      "original_format": "jpg",
-      "output_format": "jpeg",
-      "original_width": 1200,
-      "output_width": 800,
-      "aspect_ratio": "preserved (533x800)",
-      "files": [
-        "product-01.jpeg (54KB)",
-        "product-02.jpeg (72KB)",
-        "product-03.jpeg (54KB)",
-        "product-04.jpeg (80KB)",
-        "product-05.jpeg (78KB)"
-      ]
+  "product_count": 6,
+  "testimonial_count": 6,
+  "product_images": [
+    {
+      "file": "product-01.jpeg",
+      "width": 536,
+      "height": 800,
+      "size_bytes": 50653
     },
-    "testimonial_images": {
-      "original_format": "webp",
-      "output_format": "jpeg",
-      "output_width": 400,
-      "aspect_ratio": "preserved (various widths: 212-262px)",
-      "cropping": "none - full images preserved for CSS circular display",
-      "sample_dimensions": [
-        "testimonial-01.jpeg: 212x400",
-        "testimonial-05.jpeg: 212x400",
-        "testimonial-10.jpeg: 231x400",
-        "testimonial-19.jpeg: 262x400"
-      ],
-      "file_count": 19
+    {
+      "file": "product-02.jpeg",
+      "width": 536,
+      "height": 800,
+      "size_bytes": 50729
+    },
+    {
+      "file": "product-03.jpeg",
+      "width": 536,
+      "height": 800,
+      "size_bytes": 50651
+    },
+    {
+      "file": "product-04.jpeg",
+      "width": 536,
+      "height": 800,
+      "size_bytes": 50880
+    },
+    {
+      "file": "product-05.jpeg",
+      "width": 536,
+      "height": 800,
+      "size_bytes": 50926
+    },
+    {
+      "file": "product-06.jpeg",
+      "width": 536,
+      "height": 800,
+      "size_bytes": 50790
     }
-  },
-  "errors": []
+  ],
+  "testimonial_images": [
+    {
+      "file": "testimonial-01.jpeg",
+      "width": 268,
+      "height": 400,
+      "size_bytes": 51217
+    },
+    {
+      "file": "testimonial-02.jpeg",
+      "width": 268,
+      "height": 400,
+      "size_bytes": 50260
+    },
+    {
+      "file": "testimonial-03.jpeg",
+      "width": 268,
+      "height": 400,
+      "size_bytes": 52112
+    },
+    {
+      "file": "testimonial-04.jpeg",
+      "width": 268,
+      "height": 400,
+      "size_bytes": 50695
+    },
+    {
+      "file": "testimonial-05.jpeg",
+      "width": 268,
+      "height": 400,
+      "size_bytes": 49778
+    },
+    {
+      "file": "testimonial-06.jpeg",
+      "width": 268,
+      "height": 400,
+      "size_bytes": 51583
+    }
+  ],
+  "status": "complete"
 }

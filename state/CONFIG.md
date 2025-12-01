@@ -1,22 +1,15 @@
-# LAUNCHER V7.0 Configuration
+# CONFIG
+PRODUCT_NAME=Green Dress
+PRODUCT_TAGLINE=auto
+PRODUCT_URL=auto
+OUTPUT_FOLDER=/Users/nelsonchan/Downloads/green dress with gemini
+SITE_NAME=green-dress-gemini-v7
+IMAGES_FOLDER=/Users/nelsonchan/Downloads/green dress with gemini/images
+POOL_MODE=existing
+POOL_URL=https://simpleswap-automation-1.onrender.com
+MERCHANT_WALLET=0x1372Ad41B513b9d6eC008086C03d69C635bAE578
+BRIGHTDATA_HOST=brd.superproxy.io
+BRIGHTDATA_USER=brd-customer-hl_9d12e57c-zone-scraping_browser1
+BRIGHTDATA_PASS=u2ynaxqh9899
+POOL_NAME=green-dress-pool
 
-## Core Variables
-| Variable | Value |
-|----------|-------|
-| PRODUCT_NAME | pinstripejeans |
-| PRODUCT_TAGLINE | Auto-generate |
-| COMPETITION_URL | https://edikted.co.uk/products/s18394_blue?srsltid=AfmBOoqOi8PopJ6rPxDZIH2m68zBUX621opiSbJ5E3wcTCf78Fk-460I |
-| OUTPUT_FOLDER | /Users/nelsonchan/Downloads/secretjeans TEMPLATE SMALL copy 2 |
-| SITE_NAME | pinstripejeans-shop |
-| IMAGES_FOLDER | /Users/nelsonchan/Downloads/secretjeans TEMPLATE SMALL copy 2/images |
-| PRODUCT_PAGE_URL | https://edikted.co.uk/products/s18394_blue?srsltid=AfmBOoqOi8PopJ6rPxDZIH2m68zBUX621opiSbJ5E3wcTCf78Fk-460I |
-
-## Pool Configuration
-| Variable | Value |
-|----------|-------|
-| POOL_MODE | existing |
-| POOL_URL | https://simpleswap-automation-1.onrender.com |
-
-## Timestamps
-- Config Created: 2025-12-01
-- Phase 0 Completed: 2025-12-01
